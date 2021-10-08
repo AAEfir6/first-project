@@ -5,18 +5,28 @@ def function1():
     
 def function2():
     print('This text represent the content of function 2')  #To be edited by member 2, Replace this line with your actual function code
+    a = int(input('please enter the first number'))
+    b = int(input('please enter the second number'))
+    c = int(input('please enter the third number'))
+
+    sum=float(a) + float(b)+ float(c)
+
+    print('a={0} b={1} c={2} ,the sum of them is {3}'.format(a,b,c,sum))
+
 
 
 def function3():
-    print('This text represent the content of function 3')  #To be edited by member 3, Replace this line with your actual function code
-
+    a = 5 
+    print('a = '+str(a)+' , Square of a:  '+str(a*a))
 
 def function4():
     x = 6 
     y = 4
-    'Comparison；x>y = 6>4'
-    print(x>y)
-    print('Therefore, x is larger than y')  #To be edited by member 4, Replace this line with your actual function code
+    print('a = '+str(x)+' b = '+str(y))
+    if x>y:
+        print('a is larger than b')
+    else:
+        print('b is larger than a')  #To be edited by member 4, Replace this line with your actual function code
 
 
 #The Main function edited by Group leader

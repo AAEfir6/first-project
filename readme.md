@@ -1,26 +1,16 @@
 
 <p align="center">
 
-  <h3 align="center">PolyU ENG1003 AAE Freshman Project</h3>
+  <h3 align="center">PolyU ENG1003 AAE Freshman Project Group 6</h3>
 
-  <p align="center">
-    <br />
-    <a href="LT HSU ENG1003 Teaching Plan 2021-22 S1.pdf"><strong>Teaching Plan</strong></a>
-    <br />
-    <br />
-    <a href="Freshman Project Assessment Criteria.pdf"><strong>Assessment Criteria</strong></a>
-    <br />  
-  </p>
 </p>
-
-*Project Objective: To provide students with opportunities to develop creativity, problem-solving skills and team-work abilities through a group project. During this project, students will get not only the valuable practical experience to use computer programming language to design and develop a path planning algorithm for an aircraft operation from scratch but also practical skills of using online collaborating programming platform to work with group members remotely.*
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li>
-      <a href="#lecture-materials">Lecture Materials</a>
+      <a href="#Background of Path Planning to Aviation Engineering">1. Background of Path Planning to Aviation Engineering</a>
     </li>
     <li>
       <a href="#contact">Contact</a>
@@ -30,14 +20,30 @@
     </li>
     <li>
       <a href="#acknowledgements">Acknowledgements</a>
-    </li>    
+    </li>
+    <li>
+      <a href="#acknowledgements">Acknowledgements</a>
+    </li>
+    <li>
+      <a href="#acknowledgements">Acknowledgements</a>
+    </li>
+    <li>
+      <a href="#acknowledgements">Acknowledgements</a>
+    </li>
+    <li>
+      <a href="#acknowledgements">Acknowledgements</a>
+    </li>
+    <li>
+      <a href="#acknowledgements">Acknowledgements</a>
+    </li>
+    
   </ol>
 </details>
 
 
 
 <!-- Lecture Materials -->
-## Lecture Materials
+## Background of Path Planning to Aviation Engineering
 <a href="Lecture%20Notes/"><strong>Lecture Notes</strong></a>
 
 <a href="Lecture%20Videos/"><strong>Lecture Videos</strong></a>

@@ -19,25 +19,25 @@
       <a href="#Introduction-of-the-Engineering-Tools">Introduction of the Engineering Tools</a>
     </li>
     <li>
-      <a href="#Task-1:-Methodology,-Results-and-Discussion">Acknowledgements</a>
+      <a href="#Task1">Task 1: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task-2.1:-Methodology,-Results-and-Discussion">Acknowledgements</a>
+      <a href="#Task21">Task 2.1: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task-2.2:-Methodology,-Results-and-Discussion">Acknowledgements</a>
+      <a href="#Task22">Task 2.2: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task-3:-Methodology,-Results-and-Discussion">Acknowledgements</a>
+      <a href="#Task3">Task 3: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task-4:-Methodology,-Results-and-Discussion">Acknowledgements</a>
+      <a href="#Task4">Task 4: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Reflective-Essay">Acknowledgements</a>
+      <a href="#Reflective-Essay">Reflective Essay</a>
     </li>
     <li>
-      <a href="#References">Acknowledgements</a>
+      <a href="#References">References</a>
     </li>
     
     
@@ -87,27 +87,27 @@ Mr Man Hin (Melvin) CHENG - manhin.cheng@connect.polyu.hk - https://github.com/M
 ## Acknowledgements
 We use [Best-README-Template](https://github.com/othneildrew/Best-README-Template) for readme organization and [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) for demo A star path planning.
 
-## Task 1: Methodology, Results and Discussion
+## Task1
 a. Methodology
 b. Results
 c. Discussion
 
-## Task 2.1: Methodology, Results and Discussion
+## Task21
 a. Methodology
 b. Results
 c. Discussion
 
-## Task 2.2: Methodology, Results and Discussion
+## Task22
 a. Methodology
 b. Results
 c. Discussion
 
-## Task 3: Methodology, Results and Discussion
+## Task3
 a. Methodology
 b. Results
 c. Discussion
 
-## Task 4: Methodology, Results and Discussion
+## Task4
 a. Methodology
 b. Results
 

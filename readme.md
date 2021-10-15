@@ -10,7 +10,7 @@
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li>
-      <a href="#Background of Path Planning to Aviation Engineering">1. Background of Path Planning to Aviation Engineering</a>
+      <a href="#Background-of-Path-Planning-to-Aviation-Engineering">Background of Path Planning to Aviation Engineering</a>
     </li>
     <li>
       <a href="#contact">Contact</a>

@@ -13,36 +13,38 @@
       <a href="#Background-of-Path-Planning-to-Aviation-Engineering">Background of Path Planning to Aviation Engineering</a>
     </li>
     <li>
-      <a href="#contact">Contact</a>
+      <a href="#Theory-of-Path-Planning-Algorithm">Theory of Path Planning Algorithm</a>
     </li>
     <li>
-      <a href="#student-tasks">Student Tasks</a>
+      <a href="#Introduction-of-the-Engineering-Tools">Introduction of the Engineering Tools</a>
     </li>
     <li>
-      <a href="#acknowledgements">Acknowledgements</a>
+      <a href="#Task-1:-Methodology,-Results-and-Discussion">Acknowledgements</a>
     </li>
     <li>
-      <a href="#acknowledgements">Acknowledgements</a>
+      <a href="#Task-2.1:-Methodology,-Results-and-Discussion">Acknowledgements</a>
     </li>
     <li>
-      <a href="#acknowledgements">Acknowledgements</a>
+      <a href="#Task-2.2:-Methodology,-Results-and-Discussion">Acknowledgements</a>
     </li>
     <li>
-      <a href="#acknowledgements">Acknowledgements</a>
+      <a href="#Task-3:-Methodology,-Results-and-Discussion">Acknowledgements</a>
     </li>
     <li>
-      <a href="#acknowledgements">Acknowledgements</a>
+      <a href="#Task-4:-Methodology,-Results-and-Discussion">Acknowledgements</a>
     </li>
     <li>
-      <a href="#acknowledgements">Acknowledgements</a>
+      <a href="#Reflective-Essay">Acknowledgements</a>
     </li>
+    <li>
+      <a href="#References">Acknowledgements</a>
+    </li>
+    
     
   </ol>
 </details>
 
 
-
-<!-- Lecture Materials -->
 ## Background of Path Planning to Aviation Engineering
 <a href="Lecture%20Notes/"><strong>Lecture Notes</strong></a>
 
@@ -50,8 +52,7 @@
 
 <a href="Sample%20Codes/"><strong>Sample Codes</strong></a>
 
-<!-- Student Tasks -->
-## Student Tasks
+## Theory of Path Planning Algorithm
 <a href="ENG1003 Week 3 Tutorial.pdf"><strong>Tutorial Task</strong></a> - <a href="ENG1003 Week 3 Tutorial Walkthrough.pdf"><strong>Step-by-Step Instruction</strong></a>
 
 <a href="Lecture Notes/Week 6 Design goals (Compulsory).pdf"><strong>Compulsory Tasks</strong></a>  -  <strong>[Tutorial link](https://youtu.be/PRKLhcG2kB0)</strong>
@@ -61,8 +62,7 @@
 <a href="Lecture Notes/Report template .pdf"><strong>Final Report Template</strong></a>  -  <strong>[Tutorial link](https://www.youtube.com/watch?v=ECuqb5Tv9qI)</strong>
 
 
-<!-- CONTACT -->
-## Contact
+## Introduction of the Engineering Tools
 **General Inquiry**
 
 Dr Li-Ta Hsu -  lt.hsu@polyu.edu.hk - https://github.com/qmohsu
@@ -87,7 +87,43 @@ Mr Man Hin (Melvin) CHENG - manhin.cheng@connect.polyu.hk - https://github.com/M
 ## Acknowledgements
 We use [Best-README-Template](https://github.com/othneildrew/Best-README-Template) for readme organization and [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) for demo A star path planning.
 
+## Task 1: Methodology, Results and Discussion
+a. Methodology
+b. Results
+c. Discussion
 
+## Task 2.1: Methodology, Results and Discussion
+a. Methodology
+b. Results
+c. Discussion
 
+## Task 2.2: Methodology, Results and Discussion
+a. Methodology
+b. Results
+c. Discussion
 
+## Task 3: Methodology, Results and Discussion
+a. Methodology
+b. Results
+c. Discussion
 
+## Task 4: Methodology, Results and Discussion
+a. Methodology
+b. Results
+
+## Reflective Essay
+a. Member 1
+b. Member 2
+c. Member 3
+d. Member 4
+e. Member 5
+
+## References
+Ahmad, Z., Ullah, F., Tran, C., & Lee, S. (2017). Efficient energy flight path
+planning algorithm using 3-d visibility roadmap for small unmanned aerial
+vehicle. International Journal of Aerospace Engineering, 2017.
+For your self-learning https://www.polyu.edu.hk/aae/internal/studentresources/
+PolyU AAE Endnote tutorial
+https://www.youtube.com/watch?v=DP1bpnYRKxk
+PolyU AAE report formatting tutorial
+https://www.youtube.com/watch?v=p2GaOD_Ca1Y

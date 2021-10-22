@@ -80,7 +80,7 @@ We use [Best-README-Template](https://github.com/othneildrew/Best-README-Templat
 https://github.com/AAEfir6/first-project/blob/main/Addition%20Calculation.py<br>
 a. Methodology<br>
 The objective of this task is to find the flight route with the minimum achievable cost which can let the plane fly to the final destination. There is a map, the python algorithm for pathfinding, and the parameters of the aircraft to the group to calculate and obtain the objective.<br><br>
-To finish task 1, the group should modified the code to match the map was given to each group. Then test the plane with different parameters in the source code to find the minimum achievable cost 
+To finish task 1, the group should modified the code to match the map was given to each group. Then test the aeroplane with different parameters in the source code to find the minimum achievable cost from those 4 aeroplanes were given.
 ![螢幕擷取畫面 2021-10-22 112618](https://user-images.githubusercontent.com/85985312/138388655-76fe86d4-d02c-4459-b05e-30cd6e492fbc.png)<br>
 <br>b. Results
 <br>c. Discussion
@@ -105,8 +105,8 @@ a. Methodology
 b. Results
 
 ## Reflective Essay
-a. Member 1
-b. Member 2dsjchskdjhcksjdhcksdkch
+a. Member 1<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+b. Member 2
 c. Member 3
 d. Member 4
 e. Member 5

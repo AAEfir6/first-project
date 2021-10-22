@@ -46,20 +46,9 @@
 
 
 ## Background of Path Planning to Aviation Engineering
-<a href="Lecture%20Notes/"><strong>Lecture Notes</strong></a>
 
-<a href="Lecture%20Videos/"><strong>Lecture Videos</strong></a>
-
-<a href="Sample%20Codes/"><strong>Sample Codes</strong></a>
 
 ## Theory of Path Planning Algorithm
-<a href="ENG1003 Week 3 Tutorial.pdf"><strong>Tutorial Task</strong></a> - <a href="ENG1003 Week 3 Tutorial Walkthrough.pdf"><strong>Step-by-Step Instruction</strong></a>
-
-<a href="Lecture Notes/Week 6 Design goals (Compulsory).pdf"><strong>Compulsory Tasks</strong></a>  -  <strong>[Tutorial link](https://youtu.be/PRKLhcG2kB0)</strong>
-
-<a href="Lecture Notes/Week 6 Additional Tasks.pdf"><strong>Additional Tasks</strong></a>
-
-<a href="Lecture Notes/Report template .pdf"><strong>Final Report Template</strong></a>  -  <strong>[Tutorial link](https://www.youtube.com/watch?v=ECuqb5Tv9qI)</strong>
 
 
 ## Introduction of the Engineering Tools
@@ -88,8 +77,9 @@ Mr Man Hin (Melvin) CHENG - manhin.cheng@connect.polyu.hk - https://github.com/M
 We use [Best-README-Template](https://github.com/othneildrew/Best-README-Template) for readme organization and [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) for demo A star path planning.
 
 ## Task1
-https://github.com/AAEfir6/first-project/blob/main/Addition%20Calculation.py
-a. Methodology
+https://github.com/AAEfir6/first-project/blob/main/Addition%20Calculation.py<br>
+a. Methodology<br>
+The objective in this task is to find the flight route with the minimum cost which can let the plane fly to the final destination.
 b. Results
 c. Discussion
 
@@ -118,7 +108,7 @@ b. Results
 
 ## Reflective Essay
 a. Member 1
-b. Member 2
+b. Member 2dsjchskdjhcksjdhcksdkch
 c. Member 3
 d. Member 4
 e. Member 5

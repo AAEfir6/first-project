@@ -46,6 +46,7 @@
 
 
 ## Background of Path Planning to Aviation Engineering
+<A> Aviation industry development is very important nowadays
 
 
 ## Theory of Path Planning Algorithm
@@ -79,10 +80,9 @@ We use [Best-README-Template](https://github.com/othneildrew/Best-README-Templat
 ## Task1
 https://github.com/AAEfir6/first-project/blob/main/Addition%20Calculation.py<br>
 a. Methodology<br>
-The objective in this task is to find the flight route with the minimum cost which can let the plane fly to the final destination.<br>
-![螢幕擷取畫面 2021-10-22 112618](https://user-images.githubusercontent.com/85985312/138388655-76fe86d4-d02c-4459-b05e-30cd6e492fbc.png)<br>
-<br>b. Results
-<br>c. Discussion
+The objective in this task is to find the flight route with the minimum cost which can let the plane fly to the final destination.
+b. Results
+c. Discussion
 
 ## Task21
 a. Methodology

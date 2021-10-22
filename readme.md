@@ -88,8 +88,9 @@ Mr Man Hin (Melvin) CHENG - manhin.cheng@connect.polyu.hk - https://github.com/M
 We use [Best-README-Template](https://github.com/othneildrew/Best-README-Template) for readme organization and [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) for demo A star path planning.
 
 ## Task1
-https://github.com/AAEfir6/first-project/blob/main/Addition%20Calculation.py
-a. Methodology
+https://github.com/AAEfir6/first-project/blob/main/Addition%20Calculation.py<br>
+a. Methodology<br>
+The objective in this task is to find the flight route with the minimum cost which can let the plane fly to the final destination.
 b. Results
 c. Discussion
 

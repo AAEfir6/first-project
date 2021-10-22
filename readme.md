@@ -100,6 +100,10 @@ c. Discussion
 
 ## Task22
 a. Methodology
+There are six varbiles and four constraints need to be considers.
+
+asdfasdfasdf
+
 b. Results
 c. Discussion
 

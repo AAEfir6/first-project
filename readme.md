@@ -91,7 +91,12 @@ Linear programming—We treat C(T)=x and C(F)=y.Then We got four inequalities an
 ![image](https://user-images.githubusercontent.com/91596396/138546153-c3914fcb-3af8-422e-ac05-2f794d9e91fc.png)
 
 b. Results
+
+
 ![image](https://user-images.githubusercontent.com/91596396/138546170-5d486cf2-d013-464e-8c5e-f96f7ed66c34.png)
+
+
+
 ![image](https://user-images.githubusercontent.com/91596396/138546174-ea40ec34-d80b-4d34-8d4f-5a5526accc11.png)
 
 

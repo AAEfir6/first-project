@@ -157,6 +157,12 @@ The final cost approximates 3206.58.
 
 c. Discussion
 
+
+In this task, since the goal is simply to add a minus-cost area, so we instantly think of making 16 different grid points on all the slopes, so that we could maximize the reduction. And the core of solution is to realize the reducing cost is not the same when the path goes through the cube in different ways. After realizing this, it is not difficult to distribute the minus-cost area.
+
+
+
+
 ## Task4
 a. Methodology
 b. Results

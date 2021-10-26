@@ -156,6 +156,7 @@ The aircraft configuration and cost is on the picture below.
 
 
 After adding the minus-cost area, the reducing cost is 4*sqrt(2)*16 which approximates 90.51
+
 The final cost approximates 3206.58.
 
 

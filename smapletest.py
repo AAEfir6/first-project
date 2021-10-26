@@ -47,14 +47,14 @@ class AStarPlanner:
         self.tc_y = tc_y
 
         ############you could modify the setup here for different aircraft models (based on the lecture slide) ##########################
-        self.C_F = 8
-        self.Delta_F = 2
+        self.C_F = 1
+        self.Delta_F = 1
         self.C_T = 2
-        self.Delta_T = 8
+        self.Delta_T = 5
         self.C_C = 10
         
-        self.Delta_F_A = 0 # additional fuel
-        self.Delta_T_A = 10 # additional time         
+        self.Delta_F_A = 0.2 # additional fuel
+        self.Delta_T_A = 0.2 # additional time         
     
 
         self.costPerGrid = self.C_F * self.Delta_F + self.C_T * self.Delta_T + self.C_C

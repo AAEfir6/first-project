@@ -140,7 +140,21 @@ The core of this methodology is greedy algorithm. About greedy algorithm, it has
 
 ## Task3
 a. Methodology
+
+The A-star path planning program can calculate the minimum cost and show the path on the screen. When considering the minus-cost area to reduce the cost of the aircraft given, we can first to find the condition of the minus-cost area. The condition is the area of minus-area is not greater than 16m^2 while the shape of the area is not limited. So, the best way of distributing the minus-cost area is to pave them under the path by a line. The minus-cost area does not affect the path when reducing the cost with 16 grid points in total. Each grid point is a slim cube If one side of the cube is parallel with the path, the reducing cost is less than the condition when its diagonal superposes the path. The cube cannot spin, so the path whose slope is 1 or -1 is the place to put 16 minus-cost grid points.
+
+
 b. Results
+
+
+The aircraft configuration and cost is on the picture below.
+
+
+After adding the minus-cost area, the reducing cost is 4*sqrt(2)*16 which approximates 90.51
+
+The final cost approximates 3206.58.
+
+
 c. Discussion
 
 ## Task4

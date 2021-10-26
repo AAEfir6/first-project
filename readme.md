@@ -143,20 +143,23 @@ a. Methodology
 
 The A-star path planning program can calculate the minimum cost and show the path on the screen. When considering the minus-cost area to reduce the cost of the aircraft given, we can first to find the condition of the minus-cost area. The condition is the area of minus-area is not greater than 16m^2 while the shape of the area is not limited. So, the best way of distributing the minus-cost area is to pave them under the path by a line. The minus-cost area does not affect the path when reducing the cost with 16 grid points in total. Each grid point is a slim cube If one side of the cube is parallel with the path, the reducing cost is less than the condition when its diagonal superposes the path. The cube cannot spin, so the path whose slope is 1 or -1 is the place to put 16 minus-cost grid points.
 
+<img width="438" alt="截屏2021-10-26 15 13 17" src="https://user-images.githubusercontent.com/90883941/138830597-43797c42-efa9-4dca-ad4b-d79cb4c7c472.png">
 
 b. Results
 
 
 The aircraft configuration and cost is on the picture below.
 
+<img width="204" alt="截屏2021-10-26 14 53 33" src="https://user-images.githubusercontent.com/90883941/138830538-579e16aa-37b3-44a6-868e-f98adee1c0b8.png">
+
+<img width="333" alt="截屏2021-10-26 14 52 24" src="https://user-images.githubusercontent.com/90883941/138830557-4164c668-9f22-441b-ad62-6119c866d219.png">
+
 
 After adding the minus-cost area, the reducing cost is 4*sqrt(2)*16 which approximates 90.51
-
 The final cost approximates 3206.58.
 
 
 c. Discussion
-
 
 In this task, since the goal is simply to add a minus-cost area, so we instantly think of making 16 different grid points on all the slopes, so that we could maximize the reduction. And the core of solution is to realize the reducing cost is not the same when the path goes through the cube in different ways. After realizing this, it is not difficult to distribute the minus-cost area.
 

@@ -135,11 +135,8 @@ a. Methodology
 b. Results
 
 ## Reflective Essay
-<<<<<<< HEAD
+
 a. Member 1
-=======
-a. Member 1<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
->>>>>>> b7f8f4a480e9615c49a20487d27446889ba03d30
 b. Member 2
 c. Member 3
 d. Member 4

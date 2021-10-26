@@ -109,6 +109,7 @@ This method（Linear Programming）only can be applied in Linear equation in 2 u
 ## Task22
 a. Methodology
 There are six variables, and four constraints need to be considered.
+
 <img width="314" alt="截屏2021-10-26 12 38 24" src="https://user-images.githubusercontent.com/90883941/138809863-4e6a2741-a2f5-48f4-b164-d97d4c51d041.png">
 
 
@@ -129,6 +130,7 @@ CF=16 CT=9 DF=1 DT=1 DFa=0 DTa=10
 <img width="351" alt="截屏2021-10-26 12 41 53" src="https://user-images.githubusercontent.com/90883941/138810123-95e5c407-7ee3-4c94-8565-264251c4ce79.png">
 
 The lowest cost is here.
+
 <img width="325" alt="截屏2021-10-26 12 42 40" src="https://user-images.githubusercontent.com/90883941/138810181-3c716fd8-330e-48a5-9084-33cb0aefa540.png">
 
 c. Discussion

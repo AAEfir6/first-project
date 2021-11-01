@@ -88,6 +88,14 @@ There are in total of 4 aircraft with different parameters was given, for us to 
 
 ![螢幕擷取畫面 2021-10-22 112618](https://user-images.githubusercontent.com/85985312/138388655-76fe86d4-d02c-4459-b05e-30cd6e492fbc.png)<br>
 <br>b. Results
+<br><br>PolyU-A380
+<br>Cost obtained: 
+<br><br>PolyU-A381
+<br>Cost obtained: 
+<br><br>PolyU-A382
+<br>Cost obtained: 
+<br><br>PolyU-A383
+<br>Cost obtained: 
 <br>c. Discussion
 
 ## Task21

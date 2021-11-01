@@ -86,8 +86,9 @@ About the aircraft parameters, which is in line 50-60 in the program. We changed
 There are in total of 4 aircraft with different parameters was given, for us to evaluate the low-cost flight plan. The parameters are CF, ΔF, CT, ΔT, C, ΔF, ΔT.
 
 
-![螢幕擷取畫面 2021-10-22 112618](https://user-images.githubusercontent.com/85985312/138388655-76fe86d4-d02c-4459-b05e-30cd6e492fbc.png)<br>
-<br>b. Results
+![螢幕擷取畫面 2021-10-22 112618](https://user-images.githubusercontent.com/85985312/138388655-76fe86d4-d02c-4459-b05e-30cd6e492fbc.png)
+
+<br><br>b. Results
 <br><br>PolyU-A380
 <br>Cost obtained: 
 <br><br>PolyU-A381
@@ -96,7 +97,8 @@ There are in total of 4 aircraft with different parameters was given, for us to 
 <br>Cost obtained: 
 <br><br>PolyU-A383
 <br>Cost obtained: 
-<br>c. Discussion
+
+<br><br>c. Discussion
 
 ## Task21
 a. Methodology

@@ -100,7 +100,7 @@ There are in total of 4 aircraft with different parameters was given, for us to 
 
 <br><br>c. Discussion
 
-## Task21
+## Task2.1
 a. Methodology
 
 Linear programming—We treat C(T)=x and C(F)=y.Then We got four inequalities and drew them all in the same x-y coordinate(see the black lines),after that we could find there is a common area which is surrounded by the four lines(see the red area).On the other hand because C=x*delta_F+y*delta_T+C_c. Delta_F=delta_T=5 and C_c=a constant.Therefore C=5(x+y)+C_c.We let C(min)=Z.Then simplify it we got y>=0.2(Z-C_c)-x.It means a clust of parallel lines and we drew some of them in the former coordinate(see the blue lines).The minimum C where it is must be at the border of the red area and we found that when x=20 and y=20 comes the minimum C.
@@ -121,7 +121,7 @@ This method（Linear Programming）only can be applied in Linear equation in 2 u
 ![image](https://user-images.githubusercontent.com/91596396/138546191-5946d538-7718-43bf-96d6-3bd5e631c92c.png)
 
 
-## Task22
+## Task2.2
 a. Methodology
 There are six variables, and four constraints need to be considered.
 

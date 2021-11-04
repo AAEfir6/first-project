@@ -90,13 +90,22 @@ There are in total of 4 aircraft with different parameters was given, for us to 
 
 <br><br>b. Results
 <br><br>PolyU-A380
-<br>Cost obtained: 
+<br>Cost obtained: 3297.09
+<br>![A380 route](https://user-images.githubusercontent.com/85985312/140323045-407b2240-99e6-40d7-899c-8db67fc6b7a4.png)
+![A380 cost](https://user-images.githubusercontent.com/85985312/140323042-f1be15ae-2744-48f2-9efc-1fd59d279229.png)
 <br><br>PolyU-A381
-<br>Cost obtained: 
+<br>Cost obtained: 4163.58
+<br>![A381 route](https://user-images.githubusercontent.com/85985312/140323049-4fe58687-85c4-47ff-be0d-994534280b88.png)
+![A381 cost](https://user-images.githubusercontent.com/85985312/140323047-26d5e111-811e-43d0-b956-92f4c0c0a794.png)
 <br><br>PolyU-A382
-<br>Cost obtained: 
+<br>Cost obtained: 5028.57
+<br>![A382 route](https://user-images.githubusercontent.com/85985312/140323030-6b405f17-9d38-44eb-bddc-049a92b50e2b.png)
+![A382 cost](https://user-images.githubusercontent.com/85985312/140323025-28941387-e40a-4e6e-abc4-96648ed32c1b.png)
 <br><br>PolyU-A383
-<br>Cost obtained: 
+<br>Cost obtained: 5886.06
+<br>![A383 route](https://user-images.githubusercontent.com/85985312/140323036-5aa1caf6-5cf3-4bed-9915-33600c2fb7bd.png)
+![A383 cost](https://user-images.githubusercontent.com/85985312/140323033-2abcf5c4-7b2e-4df2-bc3b-5cdcd5e0ac61.png)
+
 
 <br><br>c. Discussion
 

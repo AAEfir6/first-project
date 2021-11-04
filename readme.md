@@ -106,8 +106,8 @@ There are in total of 4 aircraft with different parameters was given, for us to 
 <br>![A383 route](https://user-images.githubusercontent.com/85985312/140323036-5aa1caf6-5cf3-4bed-9915-33600c2fb7bd.png)
 ![A383 cost](https://user-images.githubusercontent.com/85985312/140323033-2abcf5c4-7b2e-4df2-bc3b-5cdcd5e0ac61.png)
 
-
-<br><br>c. Discussion
+<br>c. Discussion
+<br>
 
 ## Task2.1
 a. Methodology
@@ -116,7 +116,6 @@ Linear programming—We treat C(T)=x and C(F)=y.Then We got four inequalities an
 ![image](https://user-images.githubusercontent.com/91596396/138546153-c3914fcb-3af8-422e-ac05-2f794d9e91fc.png)
 
 b. Results
-
 
 ![image](https://user-images.githubusercontent.com/91596396/138546170-5d486cf2-d013-464e-8c5e-f96f7ed66c34.png)
 

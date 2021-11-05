@@ -107,10 +107,10 @@ There are in total of 4 aircraft with different parameters was given, for us to 
 ![A383 cost](https://user-images.githubusercontent.com/85985312/140323033-2abcf5c4-7b2e-4df2-bc3b-5cdcd5e0ac61.png)
 
 <br>c. Discussion
-<br>
+<br>In this task, the aim is to find which is the aircraft provided has the lowest cost to fight the route. In the beginning, we find that it is not easy to setup the map for the group to stimulate the flight plan. After building the map, we change the aircraft parameters to stimulate the flight. After we finish all 4 aircraft simulation, we found that the cost of aircraft PolyU-A380 is the lowest. It only cost around 3300units. Lower than others cost about 27-78%. To round up, the main focus of this task is implementing the map and knowing the algorithm. And this task allows us knowing the framework of this project we going to do.
 
 ## Task2.1
-a. Methodology
+<br>a. Methodology
 
 Linear programming—We treat C(T)=x and C(F)=y.Then We got four inequalities and drew them all in the same x-y coordinate(see the black lines),after that we could find there is a common area which is surrounded by the four lines(see the red area).On the other hand because C=x*delta_F+y*delta_T+C_c. Delta_F=delta_T=5 and C_c=a constant.Therefore C=5(x+y)+C_c.We let C(min)=Z.Then simplify it we got y>=0.2(Z-C_c)-x.It means a clust of parallel lines and we drew some of them in the former coordinate(see the blue lines).The minimum C where it is must be at the border of the red area and we found that when x=20 and y=20 comes the minimum C.
 ![image](https://user-images.githubusercontent.com/91596396/138546153-c3914fcb-3af8-422e-ac05-2f794d9e91fc.png)

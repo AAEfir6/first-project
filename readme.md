@@ -197,10 +197,11 @@ b. Results
 ## Reflective Essay
 
 a. Member 1
-b. Member 2
-c. Member 3
-d. Member 4
-e. Member 5
+<br>
+<br>b. Member 2
+<br>c. Member 3
+<br>d. Member 4
+<br>e. Member 5
 
 ## References
 Ahmad, Z., Ullah, F., Tran, C., & Lee, S. (2017). Efficient energy flight path

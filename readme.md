@@ -577,6 +577,7 @@ if __name__ == '__main__':
 ```
 ### b. Results
 <img align="left" width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/main/Task4.1%20Fig.png">
+<img align="right" width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/main/Task4.1%20Gif.gif">
 
 ### c. Discussion
 

@@ -53,16 +53,15 @@ class AStarPlanner:
         self.Delta_T = 5
         self.C_C = 10
         
-        self.Delta_F_A = 2 # additional fuel
-        self.Delta_T_A = 5 # additional time 
-        
-        
+        self.Delta_F_A = 0.2 # additional fuel
+        self.Delta_T_A = 0.2 # additional time         
+    
 
         self.costPerGrid = self.C_F * self.Delta_F + self.C_T * self.Delta_T + self.C_C
 
-        print("PolyU-A380 cost part1-> ", self.C_F * (self.Delta_F + self.Delta_F_A) )
-        print("PolyU-A380 cost part2-> ", self.C_T * (self.Delta_T + self.Delta_T_A) )
-        print("PolyU-A380 cost part3-> ", self.C_C )
+        print("PolyU-A383 cost part1-> ", self.C_F * (self.Delta_F + self.Delta_F_A) )
+        print("PolyU-A383 cost part2-> ", self.C_T * (self.Delta_T + self.Delta_T_A) )
+        print("PolyU-A383 cost part3-> ", self.C_C )
 
     class Node: # definition of a sinle node
         def __init__(self, x, y, cost, parent_index):
@@ -294,29 +293,6 @@ def main():
     grid_size = 1  # [m]
     robot_radius = 1.0  # [m]
 
-    # set obstacle positions for group 8
-    # ox, oy = [], []
-    # for i in range(-10, 60): # draw the button border 
-    #     ox.append(i)
-    #     oy.append(-10.0)
-    # for i in range(-10, 60):
-    #     ox.append(60.0)
-    #     oy.append(i)
-    # for i in range(-10, 61):
-    #     ox.append(i)
-    #     oy.append(60.0)
-    # for i in range(-10, 61):
-    #     ox.append(-10.0)
-    #     oy.append(i)
-    # for i in range(-10, 40):
-    #     ox.append(20.0)
-    #     oy.append(i)
-    # for i in range(0, 40):
-    #     ox.append(40.0)
-    #     oy.append(60.0 - i)
-
-
-    # set obstacle positions for group 9
     ox, oy = [], []
     for i in range(-10, 60): # draw the button border 
         ox.append(i)
@@ -338,13 +314,6 @@ def main():
     for i in range(10, 60): # draw the free border
         ox.append(i)
         oy.append(40.0)
-
-
-    
-    # for i in range(40, 45): # draw the button border 
-    #     ox.append(i)
-    #     oy.append(30.0)
-
     
     # set fuel consuming area
     fc_x, fc_y = [], []

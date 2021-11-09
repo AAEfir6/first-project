@@ -22,16 +22,19 @@
       <a href="#Task1">Task 1: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task21">Task 2.1: Methodology, Results and Discussion</a>
+      <a href="#Task2-1">Task 2.1: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task22">Task 2.2: Methodology, Results and Discussion</a>
+      <a href="#Task2-2">Task 2.2: Methodology, Results and Discussion</a>
     </li>
     <li>
       <a href="#Task3">Task 3: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task4">Task 4: Methodology, Results and Discussion</a>
+      <a href="#Task4-1-Adding-Checkpoints">Additional Task 4.1 Adding Checkpoints</a>
+    </li>
+    <li>
+      <a href="#Task4-2-Changing-Environment">Additional Task 4.2 Changing Environment</a>
     </li>
     <li>
       <a href="#Reflective-Essay">Reflective Essay</a>
@@ -52,26 +55,7 @@
 
 
 ## Introduction of the Engineering Tools
-**General Inquiry**
 
-Dr Li-Ta Hsu -  lt.hsu@polyu.edu.hk - https://github.com/qmohsu
-
-Dr Weisong Wen -  welson.wen@polyu.edu.hk - https://github.com/weisongwen
-
-
-**Assistance on Your Project**
-
-*Group 1-3*
-
-Miss Hui Yi (Queenie) HO - hiu-yi.ho@connect.polyu.hk - https://github.com/queenie-ho
-
-*Group 4-6*
-
-Miss Yan Tung (Nikkie) LEUNG - yan-tung.leung@connect.polyu.hk - https://github.com/tungtungyan
-
-*Group 7-10*
-
-Mr Man Hin (Melvin) CHENG - manhin.cheng@connect.polyu.hk - https://github.com/Melvincheng0830
 
 ## Acknowledgements
 We use [Best-README-Template](https://github.com/othneildrew/Best-README-Template) for readme organization and [PythonRobotics](https://github.com/AtsushiSakai/PythonRobotics) for demo A star path planning.
@@ -109,7 +93,7 @@ There are in total of 4 aircraft with different parameters was given, for us to 
 <br>c. Discussion
 <br>In this task, the aim is to find which is the aircraft provided has the lowest cost to fight the route. In the beginning, we find that it is not easy to setup the map for the group to stimulate the flight plan. After building the map, we change the aircraft parameters to stimulate the flight. After we finish all 4 aircraft simulation, we found that the cost of aircraft PolyU-A380 is the lowest. It only cost around 3300units. Lower than others cost about 27-78%. To round up, the main focus of this task is implementing the map and knowing the algorithm. And this task allows us knowing the framework of this project we going to do.
 
-## Task2.1
+## Task2-1
 <br>a. Methodology
 
 Linear programming—We treat C(T)=x and C(F)=y.Then We got four inequalities and drew them all in the same x-y coordinate(see the black lines),after that we could find there is a common area which is surrounded by the four lines(see the red area).On the other hand because C=x*delta_F+y*delta_T+C_c. Delta_F=delta_T=5 and C_c=a constant.Therefore C=5(x+y)+C_c.We let C(min)=Z.Then simplify it we got y>=0.2(Z-C_c)-x.It means a clust of parallel lines and we drew some of them in the former coordinate(see the blue lines).The minimum C where it is must be at the border of the red area and we found that when x=20 and y=20 comes the minimum C.
@@ -129,8 +113,9 @@ This method（Linear Programming）only can be applied in Linear equation in 2 u
 ![image](https://user-images.githubusercontent.com/91596396/138546191-5946d538-7718-43bf-96d6-3bd5e631c92c.png)
 
 
-## Task2.2
+## Task2-2
 a. Methodology
+
 There are six variables, and four constraints need to be considered.
 
 <img width="314" alt="截屏2021-10-26 12 38 24" src="https://user-images.githubusercontent.com/90883941/138809863-4e6a2741-a2f5-48f4-b164-d97d4c51d041.png">
@@ -138,7 +123,7 @@ There are six variables, and four constraints need to be considered.
 
 When a parameter is changed, the route might be changed, and the final cost might be changed. An algorithm called greedy algorithm may solute this problem. The greedy algorithm is to divide the whole problem into many small portions and make every small portion to be optimal. The whole problem may be optimal.
 
-This problem, the entire cost can be divided into three parts. The entire cost is equal to white blocks cost plus red blocks cost plus yellow blocks cost. And, no matter white or colored blocks, the fundamental cost is Ct* ΔT + Cf+ ΔF +Cc. Colored blocks extra costs are separate which can be considered later. Also, the colored blocks are not so many, they can hardly affect the entire cost.
+This problem, the entire cost can be divided into three parts. The entire cost is equal to white blocks cost plus red blocks cost plus yellow blocks cost. And, no matter white or colored blocks, the fundamental cost is Ct* ΔT + Cf+*ΔF +Cc. Colored blocks extra costs are separate which can be considered later. Also, the colored blocks are not so many, they can hardly affect the entire cost.
 
 The first step is to find the lowest cost of each white block ( Ct * ΔT + Cf * ΔF ), the constraint of it is Ct * ΔT + Cf * ΔT >= 25, So if white cost is 25, it is the lowest cost.
 the next problem is to distribute the number, because each parameter is integer, the distribution for these four parameters is not hard to find out.
@@ -190,9 +175,7 @@ In this task, since the goal is simply to add a minus-cost area, so we instantly
 
 
 
-## Task4
-### Task4.1 Adding checkpoints
-
+## Task4-1 Adding Checkpoints
 ### a. Methodology
 
 This is an add-on for the Task1. Therefore, modify the main function of Task1 will be able to add the checkpoints.
@@ -205,270 +188,10 @@ import matplotlib.pyplot as plt
 
 show_animation = True
 ```
-**Second, imply the AStar Algorithm demo.**
+**Second, imply the AStar Algorithm demo from [a_star.py](https://github.com/AtsushiSakai/PythonRobotics/blob/master/PathPlanning/AStar/a_star.py) .**
 ```python
 class AStarPlanner:
-
-    def __init__(self, ox, oy, resolution, rr, fc_x, fc_y, tc_x, tc_y):
-        """
-        Initialize grid map for a star planning
-
-        ox: x position list of Obstacles [m]
-        oy: y position list of Obstacles [m]
-        resolution: grid resolution [m]
-        rr: robot radius[m]
-        """
-
-        self.resolution = resolution # get resolution of the grid
-        self.rr = rr # robot radis
-        self.min_x, self.min_y = 0, 0
-        self.max_x, self.max_y = 0, 0
-        self.obstacle_map = None
-        self.x_width, self.y_width = 0, 0
-        self.motion = self.get_motion_model() # motion model for grid search expansion
-        self.calc_obstacle_map(ox, oy)
-
-        self.fc_x = fc_x
-        self.fc_y = fc_y
-        self.tc_x = tc_x
-        self.tc_y = tc_y
-
-        ############you could modify the setup here for different aircraft models (based on the lecture slide) ##########################
-        self.C_F = 1
-        self.Delta_F = 1
-        self.C_T = 2
-        self.Delta_T = 5
-        self.C_C = 10
-        
-        self.Delta_F_A = 2 # additional fuel
-        self.Delta_T_A = 5 # additional time 
-        
-        
-
-        self.costPerGrid = self.C_F * self.Delta_F + self.C_T * self.Delta_T + self.C_C
-
-        print("PolyU-A380 cost part1-> ", self.C_F * (self.Delta_F + self.Delta_F_A) )
-        print("PolyU-A380 cost part2-> ", self.C_T * (self.Delta_T + self.Delta_T_A) )
-        print("PolyU-A380 cost part3-> ", self.C_C )
-
-    class Node: # definition of a sinle node
-        def __init__(self, x, y, cost, parent_index):
-            self.x = x  # index of grid
-            self.y = y  # index of grid
-            self.cost = cost
-            self.parent_index = parent_index
-
-        def __str__(self):
-            return str(self.x) + "," + str(self.y) + "," + str(
-                self.cost) + "," + str(self.parent_index)
-
-    def planning(self, sx, sy, gx, gy):
-        """
-        A star path search
-
-        input:
-            s_x: start x position [m]
-            s_y: start y position [m]
-            gx: goal x position [m]
-            gy: goal y position [m]
-
-        output:
-            rx: x position list of the final path
-            ry: y position list of the final path
-        """
-
-        start_node = self.Node(self.calc_xy_index(sx, self.min_x), # calculate the index based on given position
-                               self.calc_xy_index(sy, self.min_y), 0.0, -1) # set cost zero, set parent index -1
-        goal_node = self.Node(self.calc_xy_index(gx, self.min_x), # calculate the index based on given position
-                              self.calc_xy_index(gy, self.min_y), 0.0, -1)
-
-        open_set, closed_set = dict(), dict() # open_set: node not been tranversed yet. closed_set: node have been tranversed already
-        open_set[self.calc_grid_index(start_node)] = start_node # node index is the grid index
-
-        while 1:
-            if len(open_set) == 0:
-                print("Open set is empty..")
-                break
-
-            c_id = min(
-                open_set,
-                key=lambda o: open_set[o].cost + self.calc_heuristic(self, goal_node,
-                                                                     open_set[
-                                                                         o])) # g(n) and h(n): calculate the distance between the goal node and openset
-            current = open_set[c_id]
-
-            # show graph
-            if show_animation:  # pragma: no cover
-                plt.plot(self.calc_grid_position(current.x, self.min_x),
-                         self.calc_grid_position(current.y, self.min_y), "xc")
-                # for stopping simulation with the esc key.
-                plt.gcf().canvas.mpl_connect('key_release_event',
-                                             lambda event: [exit(
-                                                 0) if event.key == 'escape' else None])
-                if len(closed_set.keys()) % 10 == 0:
-                    plt.pause(0.001)
-
-            # reaching goal
-            if current.x == goal_node.x and current.y == goal_node.y:
-                print("Find goal with cost of -> ",current.cost )
-                goal_node.parent_index = current.parent_index
-                goal_node.cost = current.cost
-                break
-
-            # Remove the item from the open set
-            del open_set[c_id]
-
-            # Add it to the closed set
-            closed_set[c_id] = current
-
-            # print(len(closed_set))
-
-            # expand_grid search grid based on motion model
-            for i, _ in enumerate(self.motion): # tranverse the motion matrix
-                node = self.Node(current.x + self.motion[i][0],
-                                 current.y + self.motion[i][1],
-                                 current.cost + self.motion[i][2] * self.costPerGrid, c_id)
-                
-                ## add more cost in time-consuming area
-                if self.calc_grid_position(node.x, self.min_x) in self.tc_x:
-                    if self.calc_grid_position(node.y, self.min_y) in self.tc_y:
-                        # print("time consuming area!!")
-                        node.cost = node.cost + self.Delta_T_A * self.motion[i][2]
-                
-                # add more cost in fuel-consuming area
-                if self.calc_grid_position(node.x, self.min_x) in self.fc_x:
-                    if self.calc_grid_position(node.y, self.min_y) in self.fc_y:
-                        # print("fuel consuming area!!")
-                        node.cost = node.cost + self.Delta_F_A * self.motion[i][2]
-                    # print()
-                
-                n_id = self.calc_grid_index(node)
-
-                # If the node is not safe, do nothing
-                if not self.verify_node(node):
-                    continue
-
-                if n_id in closed_set:
-                    continue
-
-                if n_id not in open_set:
-                    open_set[n_id] = node  # discovered a new node
-                else:
-                    if open_set[n_id].cost > node.cost:
-                        # This path is the best until now. record it
-                        open_set[n_id] = node
-
-        rx, ry = self.calc_final_path(goal_node, closed_set)
-        # print(len(closed_set))
-        # print(len(open_set))
-
-        return rx, ry
-
-    def calc_final_path(self, goal_node, closed_set):
-        # generate final course
-        rx, ry = [self.calc_grid_position(goal_node.x, self.min_x)], [
-            self.calc_grid_position(goal_node.y, self.min_y)] # save the goal node as the first point
-        parent_index = goal_node.parent_index
-        while parent_index != -1:
-            n = closed_set[parent_index]
-            rx.append(self.calc_grid_position(n.x, self.min_x))
-            ry.append(self.calc_grid_position(n.y, self.min_y))
-            parent_index = n.parent_index
-
-        return rx, ry
-
-    @staticmethod
-    def calc_heuristic(self, n1, n2):
-        w = 1.0  # weight of heuristic
-        d = w * math.hypot(n1.x - n2.x, n1.y - n2.y)
-        d = d * self.costPerGrid
-        return d
-    
-    def calc_heuristic_maldis(n1, n2):
-        w = 1.0  # weight of heuristic
-        dx = w * math.abs(n1.x - n2.x)
-        dy = w *math.abs(n1.y - n2.y)
-        return dx + dy
-
-    def calc_grid_position(self, index, min_position):
-        """
-        calc grid position
-
-        :param index:
-        :param min_position:
-        :return:
-        """
-        pos = index * self.resolution + min_position
-        return pos
-
-    def calc_xy_index(self, position, min_pos):
-        return round((position - min_pos) / self.resolution)
-
-    def calc_grid_index(self, node):
-        return (node.y - self.min_y) * self.x_width + (node.x - self.min_x) 
-
-    def verify_node(self, node):
-        px = self.calc_grid_position(node.x, self.min_x)
-        py = self.calc_grid_position(node.y, self.min_y)
-
-        if px < self.min_x:
-            return False
-        elif py < self.min_y:
-            return False
-        elif px >= self.max_x:
-            return False
-        elif py >= self.max_y:
-            return False
-
-        # collision check
-        if self.obstacle_map[node.x][node.y]:
-            return False
-
-        return True
-
-    def calc_obstacle_map(self, ox, oy):
-
-        self.min_x = round(min(ox))
-        self.min_y = round(min(oy))
-        self.max_x = round(max(ox))
-        self.max_y = round(max(oy))
-        print("min_x:", self.min_x)
-        print("min_y:", self.min_y)
-        print("max_x:", self.max_x)
-        print("max_y:", self.max_y)
-
-        self.x_width = round((self.max_x - self.min_x) / self.resolution)
-        self.y_width = round((self.max_y - self.min_y) / self.resolution)
-        print("x_width:", self.x_width)
-        print("y_width:", self.y_width)
-
-        # obstacle map generation
-        self.obstacle_map = [[False for _ in range(self.y_width)]
-                             for _ in range(self.x_width)] # allocate memory
-        for ix in range(self.x_width):
-            x = self.calc_grid_position(ix, self.min_x) # grid position calculation (x,y)
-            for iy in range(self.y_width):
-                y = self.calc_grid_position(iy, self.min_y)
-                for iox, ioy in zip(ox, oy): # Python’s zip() function creates an iterator that will aggregate elements from two or more iterables. 
-                    d = math.hypot(iox - x, ioy - y) # The math. hypot() method finds the Euclidean norm
-                    if d <= self.rr:
-                        self.obstacle_map[ix][iy] = True # the griid is is occupied by the obstacle
-                        break
-
-    @staticmethod
-    def get_motion_model(): # the cost of the surrounding 8 points
-        # dx, dy, cost
-        motion = [[1, 0, 1],
-                  [0, 1, 1],
-                  [-1, 0, 1],
-                  [0, -1, 1],
-                  [-1, -1, math.sqrt(2)],
-                  [-1, 1, math.sqrt(2)],
-                  [1, -1, math.sqrt(2)],
-                  [1, 1, math.sqrt(2)]]
-
-        return motion
-
+......
 ```
 **The most important part is modifying the main function.**
 ```python
@@ -576,18 +299,137 @@ if __name__ == '__main__':
     main()
 ```
 ### b. Results
-<img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/main/Task4.1%20Fig.png">
+
 <img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/main/Task4.1%20Gif.gif">
 
 ### c. Discussion
 
-### Task 4.2 Changing Environment
+This task simulated the reality flight path planning. In real life, an aircraft flight plan will include different waypoints to fly-by or flyover to define an area navigation route. Back to the coding practice of this task, the modified parts are setting the AStarPlanner in the separated route. The first route is that flying from the start point to checkpoint 1 which is in the fuel consuming area. The second route is that flying from checkpoint 1 to checkpoint 2 which is in a time-consuming area. The last route is flying from checkpoint 2 to the endpoint. Then, plot the points and routes with calling AStarPlanner one-by-one. 
 
+## Task4-2 Changing Environment
 ### a. Methodology
 
+**First, import math and matplotlib, also set up the show_animation function. Moreover, import the random**
+```python
+import math
+import random
+import matplotlib.pyplot as plt
+```
+**Second, imply the AStar Algorithm demo from [a_star.py](https://github.com/AtsushiSakai/PythonRobotics/blob/master/PathPlanning/AStar/a_star.py) but modify the get_motion_model to disable diagonal movements. For debugging, deleting time-consuming area and raelated variables is recommended**
+```python
+class AStarPlanner:
+......
+@staticmethod
+    def get_motion_model(): # the cost of the surrounding 8 points
+        # dx, dy, cost
+        motion = [[1, 0, 1],
+                  [0, 1, 1],
+                  [-1, 0, 1],
+                  [0, -1, 1]]
+        return motion
+``` 
+**Third, define the main function again. **
+```python
+def main():
+    print(__file__ + " Start the A star algorithm demo !!") # print simple notes
+
+
+    ox, oy = [], []
+    for i in range(-10, 60): # draw the button border 
+        ox.append(i)
+        oy.append(-10.0)
+    for i in range(-10, 60): # draw the right border
+        ox.append(60.0)
+        oy.append(i)
+    for i in range(-10, 60): # draw the top border
+        ox.append(i)
+        oy.append(60.0)
+    for i in range(-10, 60): # draw the left border
+        ox.append(-10.0)
+        oy.append(i)
+    
+    # Only the fuel-consuming area remainsand generate it randomly with a fixed area (30x30)
+    
+    fc_x, fc_y = [], []
+    r_fc_x = random.randrange(-9, 31) 
+    r_fc_y = random.randrange(-9, 31) 
+    for i in range(r_fc_x, r_fc_x+30):
+        for j in range(r_fc_y, r_fc_y+30):
+            fc_x.append(i)
+            fc_y.append(j)
+            
+    # Diagonal movement is disabled, change parameter(s) so that the object could travel within one grid size
+    
+    grid_size = 1  
+    robot_radius = 0
+    
+    # Destination and starting points aregenerated randomly with at least a 50-unit distance in-between
+    
+    while True:
+        sx = random.randrange(-10, 59)  # [m]
+        sy = random.randrange(-10, 59)  # [m]
+        gx = random.randrange(-10, 59)  # [m]
+        gy = random.randrange(-10, 59)  # [m]
+        if (gx-sx) >= 50 or (sx-gx) >= 50 or (gy-sy) >= 50 or (sy-gy) >= 50:
+            break
+    
+    # Obstacles are generated randomly with reasonable density
+    
+    for i in range(0,700): # The number of obstacles is around 700 will be reasonable
+        g1=random.randrange(-9, 60)
+        g2=random.randrange(-9, 60)
+        if((abs(g1-sx)<=3 and abs(g2-sy)<=3 ) or (abs(g1-gx)<=3 and abs(g2-gy)<=3)):
+            continue
+        ox.append(g1)
+        oy.append(g2)
+        
+    # Plotting of the fuel-consuming area would not cover the obstacles, and obstacles should not generate at/near the start and end point
+    
+    for i in range(0,700):
+        g1=random.randrange(-9, 60)
+        g2=random.randrange(-9, 60)
+        if((abs(g1-sx)<=3 and abs(g2-sy)<=3 ) or (abs(g1-gx)<=3 and abs(g2-gy)<=3)):
+            continue
+        ox.append(g1)
+        oy.append(g2)
+    
+    if show_animation:
+        plt.plot(fc_x, fc_y, "oy")
+        plt.plot(r_fc_x, r_fc_y)
+        plt.plot(ox, oy, ".k")
+        plt.grid(True)
+        plt.axis("equal")
+
+    a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y)
+    rx, ry = a_star.planning(sx, sy, gx, gy)
+
+    if show_animation:
+        plt.plot(rx, ry)
+        plt.pause(0.001)
+        plt.plot(sx, sy, "og")
+        plt.plot(gx, gy, "xb")
+        plt.show()
+```
+**At the end, call the main function to plot the graph.**
+```python
+if __name__ == '__main__':
+    main()
+```
 ### b. Results
 
+**Extract three sample simulations**   
+* [Figure_1](https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_1%20Gif.gif)
+<img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_1%20Gif.gif">
+
+* [Figure_2](https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_2%20Gif.gif)
+<img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_2%20Gif.gif">
+
+* [Figure_3](https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task%204.2%20Figure_3%20Gif.gif)  
+<img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task%204.2%20Figure_3%20Gif.gif">
+
 ### c. Discussion
+
+This task required advanced coding(python) skills to fulfill the requirement. The most important key of this task is random. Therefore, besides the number of obstacles and boundaries are settled. Other parameters should be coded to plot randomly. Moreover, this task is simulating a realistic environment. The potential obstacles are unpredictable in the real world, especially for a flying drone. The importance of the flexibility of the algorithm is shown via this task.   
 
 ## Reflective Essay
 

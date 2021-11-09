@@ -31,7 +31,10 @@
       <a href="#Task3">Task 3: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task4">Task 4: Methodology, Results and Discussion</a>
+      <a href="#Task4.1 Adding checkpoints">Additional Task4.1 Adding checkpoints</a>
+    </li>
+    <li>
+      <a href="#Task 4.2 Changing Environment">Additional Task 4.2 Changing Environment</a>
     </li>
     <li>
       <a href="#Reflective-Essay">Reflective Essay</a>
@@ -171,8 +174,7 @@ In this task, since the goal is simply to add a minus-cost area, so we instantly
 
 
 
-## Task4
-### Task4.1 Adding checkpoints
+## Task4.1 Adding checkpoints
 
 ### a. Methodology
 
@@ -306,18 +308,22 @@ if __name__ == '__main__':
 
 This task simulated the reality flight path planning. In real life, an aircraft flight plan will include different waypoints to fly-by or flyover to define an area navigation route. Back to the coding practice of this task, the modified parts are setting the AStarPlanner in the separated route. The first route is that flying from the start point to checkpoint 1 which is in the fuel consuming area. The second route is that flying from checkpoint 1 to checkpoint 2 which is in a time-consuming area. The last route is flying from checkpoint 2 to the endpoint. Then, plot the points and routes with calling AStarPlanner one-by-one. 
 
-### Task 4.2 Changing Environment
+## Task 4.2 Changing Environment
 
 ### a. Methodology
 
 ### b. Results
-**Extract three sample simulations   
-*Figure_1    
-<img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_1%20Gif.gif">    
-*Figure_2   
-<img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_2%20Gif.gif">   
-*Figure_3   
+
+**Extract three sample simulations**   
+* [Figure_1](https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_1%20Gif.gif)
+<img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_1%20Gif.gif">
+
+* [Figure_2](https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_2%20Gif.gif)
+<img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_2%20Gif.gif">
+
+* [Figure_3](https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task%204.2%20Figure_3%20Gif.gif)  
 <img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task%204.2%20Figure_3%20Gif.gif">
+
 ### c. Discussion
 
 ## Reflective Essay

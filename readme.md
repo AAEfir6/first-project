@@ -428,7 +428,7 @@ if __name__ == '__main__':
 
 ### c. Discussion
 
-This task required advanced coding(python) skills to fulfil the requirement. The most important key of this task is random. Therefore, beside the number of obstacles and boundaries are settled. Other parameter should be coded to plot randomly. Moreover, this task is simulating the realistic environment. The potential obstacles are unpredictable in real world especially for a flying drone. The importance of the flexibility of alogorithm is shown via this task.    
+This task required advanced coding(python) skills to fulfill the requirement. The most important key of this task is random. Therefore, besides the number of obstacles and boundaries are settled. Other parameters should be coded to plot randomly. Moreover, this task is simulating a realistic environment. The potential obstacles are unpredictable in the real world, especially for a flying drone. The importance of the flexibility of the algorithm is shown via this task.   
 
 ## Reflective Essay
 

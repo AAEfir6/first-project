@@ -188,12 +188,10 @@ import matplotlib.pyplot as plt
 show_animation = True
 ```
 **Second, imply the AStar Algorithm demo from [a_star.py](https://github.com/AtsushiSakai/PythonRobotics/blob/master/PathPlanning/AStar/a_star.py) .**
-
 ```python
 class AStarPlanner:
 ......
 ```
-
 **The most important part is modifying the main function.**
 ```python
 def main():
@@ -310,6 +308,112 @@ This task simulated the reality flight path planning. In real life, an aircraft 
 ## Task4-2 Changing Environment
 ### a. Methodology
 
+**First, import math and matplotlib, also set up the show_animation function. Moreover, import the random**
+```python
+import math
+import random
+import matplotlib.pyplot as plt
+```
+**Second, imply the AStar Algorithm demo from [a_star.py](https://github.com/AtsushiSakai/PythonRobotics/blob/master/PathPlanning/AStar/a_star.py) but modify the get_motion_model to disable diagonal movements. For debugging, deleting time-consuming area and raelated variables is recommended**
+```python
+class AStarPlanner:
+......
+@staticmethod
+    def get_motion_model(): # the cost of the surrounding 8 points
+        # dx, dy, cost
+        motion = [[1, 0, 1],
+                  [0, 1, 1],
+                  [-1, 0, 1],
+                  [0, -1, 1]]
+        return motion
+``` 
+**Third, define the main function again. **
+```python
+def main():
+    print(__file__ + " Start the A star algorithm demo !!") # print simple notes
+
+
+    ox, oy = [], []
+    for i in range(-10, 60): # draw the button border 
+        ox.append(i)
+        oy.append(-10.0)
+    for i in range(-10, 60): # draw the right border
+        ox.append(60.0)
+        oy.append(i)
+    for i in range(-10, 60): # draw the top border
+        ox.append(i)
+        oy.append(60.0)
+    for i in range(-10, 60): # draw the left border
+        ox.append(-10.0)
+        oy.append(i)
+    
+    # Only the fuel-consuming area remainsand generate it randomly with a fixed area (30x30)
+    
+    fc_x, fc_y = [], []
+    r_fc_x = random.randrange(-9, 31) 
+    r_fc_y = random.randrange(-9, 31) 
+    for i in range(r_fc_x, r_fc_x+30):
+        for j in range(r_fc_y, r_fc_y+30):
+            fc_x.append(i)
+            fc_y.append(j)
+            
+    # Diagonal movement is disabled, change parameter(s) so that the object could travel within one grid size
+    
+    grid_size = 1  
+    robot_radius = 0
+    
+    # Destination and starting points aregenerated randomly with at least a 50-unit distance in-between
+    
+    while True:
+        sx = random.randrange(-10, 59)  # [m]
+        sy = random.randrange(-10, 59)  # [m]
+        gx = random.randrange(-10, 59)  # [m]
+        gy = random.randrange(-10, 59)  # [m]
+        if (gx-sx) >= 50 or (sx-gx) >= 50 or (gy-sy) >= 50 or (sy-gy) >= 50:
+            break
+    
+    # Obstacles are generated randomly with reasonable density
+    
+    for i in range(0,700): # The number of obstacles is around 700 will be reasonable
+        g1=random.randrange(-9, 60)
+        g2=random.randrange(-9, 60)
+        if((abs(g1-sx)<=3 and abs(g2-sy)<=3 ) or (abs(g1-gx)<=3 and abs(g2-gy)<=3)):
+            continue
+        ox.append(g1)
+        oy.append(g2)
+        
+    # Plotting of the fuel-consuming area would not cover the obstacles, and obstacles should not generate at/near the start and end point
+    
+    for i in range(0,700):
+        g1=random.randrange(-9, 60)
+        g2=random.randrange(-9, 60)
+        if((abs(g1-sx)<=3 and abs(g2-sy)<=3 ) or (abs(g1-gx)<=3 and abs(g2-gy)<=3)):
+            continue
+        ox.append(g1)
+        oy.append(g2)
+    
+    if show_animation:
+        plt.plot(fc_x, fc_y, "oy")
+        plt.plot(r_fc_x, r_fc_y)
+        plt.plot(ox, oy, ".k")
+        plt.grid(True)
+        plt.axis("equal")
+
+    a_star = AStarPlanner(ox, oy, grid_size, robot_radius, fc_x, fc_y)
+    rx, ry = a_star.planning(sx, sy, gx, gy)
+
+    if show_animation:
+        plt.plot(rx, ry)
+        plt.pause(0.001)
+        plt.plot(sx, sy, "og")
+        plt.plot(gx, gy, "xb")
+        plt.show()
+```
+**At the end, call the main function to plot the graph.**
+```python
+if __name__ == '__main__':
+    main()
+```
 ### b. Results
 
 **Extract three sample simulations**   

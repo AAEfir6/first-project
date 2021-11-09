@@ -445,6 +445,8 @@ A* Algorithm is a searching algorithm which searches for the shortest path betwe
 ```python
 class AStarPlanner:
 ......
+if __name__ == '__main__':
+    main()
 ```
 **Dijkstra's Alogorithm Path Planning**
 * [Dijkstra's Algorithm](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/Dijkstra.py)
@@ -454,12 +456,16 @@ class AStarPlanner:
 ```python
 class Dijkstra:
 ......
+if __name__ == '__main__':
+    main()
 ``` 
 **Probabilistic RoadMap (RPM) Path Planning**
 * [Probabilistic RoadMap](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/PRM.py)
 ```python
 class Node:
 ......
+if __name__ == '__main__':
+    main()
 ```
 
 

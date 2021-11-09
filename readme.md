@@ -22,19 +22,19 @@
       <a href="#Task1">Task 1: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task2.1">Task 2.1: Methodology, Results and Discussion</a>
+      <a href="#Task2_1">Task 2.1: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task2.2">Task 2.2: Methodology, Results and Discussion</a>
+      <a href="#Task2_2">Task 2.2: Methodology, Results and Discussion</a>
     </li>
     <li>
       <a href="#Task3">Task 3: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task4.1 Adding checkpoints">Additional Task4.1 Adding checkpoints</a>
+      <a href="#Task4_1 Adding checkpoints">Additional Task4.1 Adding checkpoints</a>
     </li>
     <li>
-      <a href="#Task 4.2 Changing Environment">Additional Task 4.2 Changing Environment</a>
+      <a href="#Task 4_2 Changing Environment">Additional Task 4.2 Changing Environment</a>
     </li>
     <li>
       <a href="#Reflective-Essay">Reflective Essay</a>

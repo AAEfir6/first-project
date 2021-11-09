@@ -31,10 +31,10 @@
       <a href="#Task3">Task 3: Methodology, Results and Discussion</a>
     </li>
     <li>
-      <a href="#Task4.1-Adding-checkpoints">Additional Task4.1 Adding checkpoints</a>
+      <a href="#Task4-1-Adding-checkpoints">Additional Task4.1 Adding checkpoints</a>
     </li>
     <li>
-      <a href="#Task4.2-Changing-Environment">Additional Task4.2 Changing Environment</a>
+      <a href="#Task4-2-Changing-Environment">Additional Task4.2 Changing Environment</a>
     </li>
     <li>
       <a href="#Reflective-Essay">Reflective Essay</a>
@@ -93,7 +93,7 @@ There are in total of 4 aircraft with different parameters was given, for us to 
 <br>c. Discussion
 <br>In this task, the aim is to find which is the aircraft provided has the lowest cost to fight the route. In the beginning, we find that it is not easy to setup the map for the group to stimulate the flight plan. After building the map, we change the aircraft parameters to stimulate the flight. After we finish all 4 aircraft simulation, we found that the cost of aircraft PolyU-A380 is the lowest. It only cost around 3300units. Lower than others cost about 27-78%. To round up, the main focus of this task is implementing the map and knowing the algorithm. And this task allows us knowing the framework of this project we going to do.
 
-## Task2.1
+## Task2-1
 <br>a. Methodology
 
 Linear programming—We treat C(T)=x and C(F)=y.Then We got four inequalities and drew them all in the same x-y coordinate(see the black lines),after that we could find there is a common area which is surrounded by the four lines(see the red area).On the other hand because C=x*delta_F+y*delta_T+C_c. Delta_F=delta_T=5 and C_c=a constant.Therefore C=5(x+y)+C_c.We let C(min)=Z.Then simplify it we got y>=0.2(Z-C_c)-x.It means a clust of parallel lines and we drew some of them in the former coordinate(see the blue lines).The minimum C where it is must be at the border of the red area and we found that when x=20 and y=20 comes the minimum C.
@@ -113,7 +113,7 @@ This method（Linear Programming）only can be applied in Linear equation in 2 u
 ![image](https://user-images.githubusercontent.com/91596396/138546191-5946d538-7718-43bf-96d6-3bd5e631c92c.png)
 
 
-## Task2.2
+## Task2-2
 a. Methodology
 There are six variables, and four constraints need to be considered.
 
@@ -174,7 +174,7 @@ In this task, since the goal is simply to add a minus-cost area, so we instantly
 
 
 
-## Task4.1 Adding checkpoints
+## Task41 Adding checkpoints
 ### a. Methodology
 
 This is an add-on for the Task1. Therefore, modify the main function of Task1 will be able to add the checkpoints.

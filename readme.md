@@ -174,7 +174,7 @@ In this task, since the goal is simply to add a minus-cost area, so we instantly
 
 
 
-# Task4.1 Adding checkpoints
+## Task4.1 Adding checkpoints
 
 ### a. Methodology
 
@@ -308,7 +308,7 @@ if __name__ == '__main__':
 
 This task simulated the reality flight path planning. In real life, an aircraft flight plan will include different waypoints to fly-by or flyover to define an area navigation route. Back to the coding practice of this task, the modified parts are setting the AStarPlanner in the separated route. The first route is that flying from the start point to checkpoint 1 which is in the fuel consuming area. The second route is that flying from checkpoint 1 to checkpoint 2 which is in a time-consuming area. The last route is flying from checkpoint 2 to the endpoint. Then, plot the points and routes with calling AStarPlanner one-by-one. 
 
-# Task 4.2 Changing Environment
+## Task 4.2 Changing Environment
 
 ### a. Methodology
 

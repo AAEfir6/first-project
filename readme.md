@@ -34,7 +34,7 @@
       <a href="#Task4-1-Adding-Checkpoints">Additional Task 4.1 Adding Checkpoints</a>
     </li>
     <li>
-      <a href="Task4-2-Changing-Environment">Additional Task 4.2 Changing Environment</a>
+      <a href="#Task4-2-Changing-Environment">Additional Task 4.2 Changing Environment</a>
     </li>
     <li>
       <a href="#Reflective-Essay">Reflective Essay</a>

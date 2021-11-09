@@ -115,6 +115,7 @@ This method（Linear Programming）only can be applied in Linear equation in 2 u
 
 ## Task2-2
 a. Methodology
+
 There are six variables, and four constraints need to be considered.
 
 <img width="314" alt="截屏2021-10-26 12 38 24" src="https://user-images.githubusercontent.com/90883941/138809863-4e6a2741-a2f5-48f4-b164-d97d4c51d041.png">
@@ -122,7 +123,7 @@ There are six variables, and four constraints need to be considered.
 
 When a parameter is changed, the route might be changed, and the final cost might be changed. An algorithm called greedy algorithm may solute this problem. The greedy algorithm is to divide the whole problem into many small portions and make every small portion to be optimal. The whole problem may be optimal.
 
-This problem, the entire cost can be divided into three parts. The entire cost is equal to white blocks cost plus red blocks cost plus yellow blocks cost. And, no matter white or colored blocks, the fundamental cost is Ct* ΔT + Cf+ ΔF +Cc. Colored blocks extra costs are separate which can be considered later. Also, the colored blocks are not so many, they can hardly affect the entire cost.
+This problem, the entire cost can be divided into three parts. The entire cost is equal to white blocks cost plus red blocks cost plus yellow blocks cost. And, no matter white or colored blocks, the fundamental cost is Ct* ΔT + Cf+*ΔF +Cc. Colored blocks extra costs are separate which can be considered later. Also, the colored blocks are not so many, they can hardly affect the entire cost.
 
 The first step is to find the lowest cost of each white block ( Ct * ΔT + Cf * ΔF ), the constraint of it is Ct * ΔT + Cf * ΔT >= 25, So if white cost is 25, it is the lowest cost.
 the next problem is to distribute the number, because each parameter is integer, the distribution for these four parameters is not hard to find out.

@@ -360,7 +360,7 @@ def main():
 
     if show_animation:  # pragma: no cover
         plt.plot(ox, oy, ".k") # plot the obstacle
-        plt.plot(sx, sy, "^r") # plot the start position 
+        plt.plot(sx, sy, "^k") # plot the start position 
         plt.plot(gx, gy, "^c") # plot the end position
         
         

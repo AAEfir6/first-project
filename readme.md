@@ -37,6 +37,9 @@
       <a href="#Task4-2-Changing-Environment">Additional Task 4.2 Changing Environment</a>
     </li>
     <li>
+      <a href="#Task4-3-Comparing-Algorithms">Additional Task 4.3 Comparing Algorithms</a>
+    </li>
+    <li>
       <a href="#Reflective-Essay">Reflective Essay</a>
     </li>
     <li>
@@ -430,6 +433,49 @@ if __name__ == '__main__':
 ### c. Discussion
 
 This task required advanced coding(python) skills to fulfill the requirement. The most important key of this task is random. Therefore, besides the number of obstacles and boundaries are settled. Other parameters should be coded to plot randomly. Moreover, this task is simulating a realistic environment. The potential obstacles are unpredictable in the real world, especially for a flying drone. The importance of the flexibility of the algorithm is shown via this task.   
+
+## Task4-3 Comparing Algorithms
+### a. Methodology
+
+**A* Alogorithm Path Planning**
+* [AStar Algorithm](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/AStar.Algorithm.py)
+
+A* Algorithm is a searching algorithm which searches for the shortest path between start point and destination. It works as a  
+
+```python
+class AStarPlanner:
+......
+if __name__ == '__main__':
+    main()
+```
+**Dijkstra's Alogorithm Path Planning**
+* [Dijkstra's Algorithm](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/Dijkstra.py)
+
+
+
+```python
+class Dijkstra:
+......
+if __name__ == '__main__':
+    main()
+``` 
+**Probabilistic RoadMap (RPM) Path Planning**
+* [Probabilistic RoadMap](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/PRM.py)
+```python
+class Node:
+......
+if __name__ == '__main__':
+    main()
+```
+
+
+
+### b. Ressults
+
+
+
+### c. Disscussion
+
 
 ## Reflective Essay
 

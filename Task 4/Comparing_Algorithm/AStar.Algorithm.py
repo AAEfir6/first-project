@@ -287,8 +287,8 @@ def main():
     print(__file__ + " start the A star algorithm demo !!") # print simple notes
 
     # start and goal position
-    sx = 0.0  # [m]
-    sy = 0.0  # [m]
+    sx = 10.0  # [m]
+    sy = 10.0  # [m]
     gx = 50.0  # [m]
     gy = 50.0  # [m]
     grid_size = 1  # [m]
@@ -318,26 +318,24 @@ def main():
 
     # set obstacle positions for group 9
     ox, oy = [], []
-    for i in range(-10, 60): # draw the button border 
+    for i in range(60):
         ox.append(i)
-        oy.append(-10.0)
-    for i in range(-10, 60): # draw the right border
+        oy.append(0.0)
+    for i in range(60):
         ox.append(60.0)
         oy.append(i)
-    for i in range(-10, 60): # draw the top border
+    for i in range(61):
         ox.append(i)
         oy.append(60.0)
-    for i in range(-10, 60): # draw the left border
-        ox.append(-10.0)
+    for i in range(61):
+        ox.append(0.0)
         oy.append(i)
-
-    for i in range(-10, 50): # draw the free border
-        ox.append(i)
-        oy.append(10.0)
-
-    for i in range(10, 60): # draw the free border
-        ox.append(i)
-        oy.append(40.0)
+    for i in range(40):
+        ox.append(20.0)
+        oy.append(i)
+    for i in range(40):
+        ox.append(40.0)
+        oy.append(60.0 - i)
 
 
     
@@ -362,12 +360,10 @@ def main():
 
     if show_animation:  # pragma: no cover
         plt.plot(ox, oy, ".k") # plot the obstacle
-        plt.plot(sx, sy, "og") # plot the start position 
-        plt.plot(gx, gy, "xb") # plot the end position
+        plt.plot(sx, sy, "^r") # plot the start position 
+        plt.plot(gx, gy, "^c") # plot the end position
         
-        plt.plot(fc_x, fc_y, "oy") # plot the fuel consuming area
-        plt.plot(tc_x, tc_y, "or") # plot the time consuming area
-
+        
         plt.grid(True) # plot the grid to the plot panel
         plt.axis("equal") # set the same resolution for x and y axis 
 

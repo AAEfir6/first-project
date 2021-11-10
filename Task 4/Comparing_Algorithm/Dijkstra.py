@@ -200,8 +200,8 @@ def main():
     print(__file__ + " start!!")
 
     # start and goal position
-    sx = 0.0  # [m]
-    sy = 0.0  # [m]
+    sx = 10.0  # [m]
+    sy = 10.0  # [m]
     gx = 50.0  # [m]
     gy = 50.0  # [m]
     grid_size = 1.0  # [m]
@@ -209,46 +209,33 @@ def main():
 
     # set obstacle positions
     ox, oy = [], []
-    for i in range(-10, 60):
+    for i in range(60):
         ox.append(i)
-        oy.append(-10.0)
-    for i in range(-10, 60):
+        oy.append(0.0)
+    for i in range(60):
         ox.append(60.0)
         oy.append(i)
-    for i in range(-10, 60):
+    for i in range(61):
         ox.append(i)
         oy.append(60.0)
-    for i in range(-10, 60):
-        ox.append(-10.0)
+    for i in range(61):
+        ox.append(0.0)
         oy.append(i)
-    for i in range(-10, 50):
-        ox.append(i)
-        oy.append(10.0)
-    for i in range(10, 60):
-        ox.append(i)
-        oy.append(40.0)
+    for i in range(40):
+        ox.append(20.0)
+        oy.append(i)
+    for i in range(40):
+        ox.append(40.0)
+        oy.append(60.0 - i)
 
-    fc_x, fc_y = [], []
-    for i in range(15, 30):
-        for j in range(20, 40):
-            fc_x.append(i)
-            fc_y.append(j)
     
-    tc_x, tc_y = [], []
-    for i in range(20, 35):
-        for j in range(42, 55):
-            tc_x.append(i)
-            tc_y.append(j)
         
     if show_animation:  # pragma: no cover
         plt.plot(ox, oy, ".k")
-        plt.plot(sx, sy, "og")
-        plt.plot(gx, gy, "xb")
+        plt.plot(sx, sy, "^r")
+        plt.plot(gx, gy, "^c")
         plt.grid(True)
         plt.axis("equal")
-
-        plt.plot(fc_x, fc_y, "oy") # plot the fuel consuming area
-        plt.plot(tc_x, tc_y, "or") # plot the time consuming area
 
     dijkstra = Dijkstra(ox, oy, grid_size, robot_radius)
     rx, ry = dijkstra.planning(sx, sy, gx, gy)

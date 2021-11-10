@@ -443,6 +443,7 @@ This task required advanced coding(python) skills to fulfill the requirement. Th
 To understand these path planning algorithms better or easier, the concept of path planning should be introduced first. Imagine that we want to find a path from starting pose to a goal pose and if we are talking about a robot that moves along the ground, there may be three states that make up it's pose - x, y location and it's orientation. A path is a sequence of pose states that smoothly connect the start and the goal and determining this sequence is called path planning. In order to find an optimal path instead of building up a tree, which is used to find the goal with a cost that is low enough, through randomly wandering. So this is where path planning algorithms come in. They provide more efficient ways to build this tree. Starting with the search based methods that build up the tree by adding nodes in an ordered pattern. To accomplish this in practice is to start with a grid base map and go cell by cell and determine the cost or the distance the robot would have to go in order to reach the cell with is goal. Once we have covered every single cell in the grid the optimal path is simply the sequence of cells that produce the minimum cost at the goal. This will produce an optimal solution at least optimal at the resolution of the grid but you can see it would be computationally expensive since it's kind of a brute-force method of checking every possible node. So to improve this, researchers came up with a-star algorithm.
 
 **A* Algorithm Path Planning**
+
 * [AStar](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/AStar.Algorithm.py)
 ```python
 class AStarPlanner:
@@ -486,6 +487,7 @@ However, this is a problem with a-star algorithm that it becomes very computatio
 For the coming up algorithm, d-star algorithm which stands for "Dynamic A* Search".
 
 **D* Algorithm Path Planning**
+
 * [DStar](https://github.com/AAEfir6/first-project/blob/c4093c464f1013c315357f301f3510d7f3c85ace/Task%204/Comparing_Algorithm/DStar.py)
 ```python
 class State:
@@ -499,6 +501,7 @@ However, it's downside might be the amount of time it takes to do the calculatio
 For another type of method, sampling-based method is introduced - Probabilistic RoadMap (RPM).
 
 **Probabilistic RoadMap (RPM) Path Planning**
+
 * [Probabilistic RoadMap](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/PRM.py)
 ```python
 class Node:

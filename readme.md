@@ -331,7 +331,9 @@ class AStarPlanner:
                   [0, -1, 1]]
         return motion
 ``` 
+
 **Third, define the main function again. **
+
 ```python
 def main():
     print(__file__ + " Start the A star algorithm demo !!") # print simple notes
@@ -420,7 +422,7 @@ if __name__ == '__main__':
 ```
 ### b. Results
 
-**Extract three sample simulations**   
+**Extracting three sample simulations**   
 * [Figure_1](https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_1%20Gif.gif)
 <img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_1%20Gif.gif">
 

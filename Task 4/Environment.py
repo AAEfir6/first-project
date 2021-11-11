@@ -291,7 +291,7 @@ def main():
         if (gx-sx) >= 50 or (sx-gx) >= 50 or (gy-sy) >= 50 or (sy-gy) >= 50:
             break
 
-    for i in range(0,700): # The number of obstacles is around 1200
+    for i in range(0,700): # The number of obstacles is around 700
         g1=random.randrange(-9, 60)
         g2=random.randrange(-9, 60)
         if((abs(g1-sx)<=3 and abs(g2-sy)<=3 ) or (abs(g1-gx)<=3 and abs(g2-gy)<=3)):
@@ -302,7 +302,7 @@ def main():
     for i in range(0,700):
         g1=random.randrange(-9, 60)
         g2=random.randrange(-9, 60)
-        if((abs(g1-sx)<=3 and abs(g2-sy)<=3 ) or (abs(g1-gx)<=3 and abs(g2-gy)<=3)):##obstacles should not generateat/near the start and end point
+        if((abs(g1-sx)<=3 and abs(g2-sy)<=3 ) or (abs(g1-gx)<=3 and abs(g2-gy)<=3)):
             continue
         ox.append(g1)
         oy.append(g2)

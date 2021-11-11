@@ -270,7 +270,7 @@ class AStarPlanner:
 def main():
     print(__file__ + " Start the A star algorithm demo with 2 checkpoints !!") # print simple notes
 
-    # start and goal position
+    # start and checkpoint 01 position
     sx = 0.0  # [m]
     sy = 0.0  # [m]
     gx = 17.0  # [m]
@@ -336,6 +336,7 @@ def main():
         plt.plot(23,47, "ob") # plot the checkpoint
         plt.plot(50,50, "xk") # plot the end position
 
+    # checkpoint 01 and checkpoint 02 position
     sx = 17.0  # [m]
     sy = 30.0  # [m]
     gx = 23.0  # [m]
@@ -350,6 +351,7 @@ def main():
         plt.plot(23,47, "ob") # plot the checkpoint
         plt.plot(50,50, "xk") # plot the end position
 
+    # checkpoint 01 and goal position
     sx = 23.0  # [m]
     sy = 47.0  # [m]
     gx = 50.0  # [m]

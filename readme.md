@@ -201,7 +201,7 @@ class AStarPlanner:
 def main():
     print(__file__ + " Start the A star algorithm demo with 2 checkpoints !!") # print simple notes
 
-    # start and goal position
+    # start and checkpoint 01 position
     sx = 0.0  # [m]
     sy = 0.0  # [m]
     gx = 17.0  # [m]
@@ -267,6 +267,7 @@ def main():
         plt.plot(23,47, "ob") # plot the checkpoint
         plt.plot(50,50, "xk") # plot the end position
 
+    # checkpoint 01 and checkpoint 02 position
     sx = 17.0  # [m]
     sy = 30.0  # [m]
     gx = 23.0  # [m]
@@ -281,6 +282,7 @@ def main():
         plt.plot(23,47, "ob") # plot the checkpoint
         plt.plot(50,50, "xk") # plot the end position
 
+    # checkpoint 01 and goal position
     sx = 23.0  # [m]
     sy = 47.0  # [m]
     gx = 50.0  # [m]
@@ -331,7 +333,9 @@ class AStarPlanner:
                   [0, -1, 1]]
         return motion
 ``` 
+
 **Third, define the main function again. **
+
 ```python
 def main():
     print(__file__ + " Start the A star algorithm demo !!") # print simple notes
@@ -420,7 +424,7 @@ if __name__ == '__main__':
 ```
 ### b. Results
 
-**Extract three sample simulations**   
+**Extracting three sample simulations**   
 * [Figure_1](https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_1%20Gif.gif)
 <img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/08a7933ef2c6ce009f65864a6412e788d2eb6249/Task4,2%20Figure_1%20Gif.gif">
 
@@ -435,31 +439,73 @@ if __name__ == '__main__':
 This task required advanced coding(python) skills to fulfill the requirement. The most important key of this task is random. Therefore, besides the number of obstacles and boundaries are settled. Other parameters should be coded to plot randomly. Moreover, this task is simulating a realistic environment. The potential obstacles are unpredictable in the real world, especially for a flying drone. The importance of the flexibility of the algorithm is shown via this task.   
 
 ## Task4-3 Comparing Algorithms
-### a. Methodology
 
-**A* Alogorithm Path Planning**
-* [AStar Algorithm](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/AStar.Algorithm.py)
+### a. Methodology & b. Disscussion
 
-A* Algorithm is a searching algorithm which searches for the shortest path between start point and destination. It works as a  
+**Brief Background**
 
+To understand these path planning algorithms better or easier, the concept of path planning should be introduced first. Imagine that we want to find a path from starting pose to a goal pose and if we are talking about a robot that moves along the ground, there may be three states that make up it's pose - x, y location and it's orientation. A path is a sequence of pose states that smoothly connect the start and the goal and determining this sequence is called path planning. In order to find an optimal path instead of building up a tree, which is used to find the goal with a cost that is low enough, through randomly wandering. So this is where path planning algorithms come in. They provide more efficient ways to build this tree. Starting with the search based methods that build up the tree by adding nodes in an ordered pattern. To accomplish this in practice is to start with a grid base map and go cell by cell and determine the cost or the distance the robot would have to go in order to reach the cell with is goal. Once we have covered every single cell in the grid the optimal path is simply the sequence of cells that produce the minimum cost at the goal. This will produce an optimal solution at least optimal at the resolution of the grid but you can see it would be computationally expensive since it's kind of a brute-force method of checking every possible node. So to improve this, researchers came up with a-star algorithm.
+
+**AStar Algorithm Path Planning**
+
+* [AStar](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/AStar.Algorithm.py)
 ```python
 class AStarPlanner:
 ......
 if __name__ == '__main__':
     main()
 ```
-**Dijkstra's Alogorithm Path Planning**
-* [Dijkstra's Algorithm](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/Dijkstra.py)
-
-
-
+A-star Algorithm is still adds nodes in an ordered way but it does so by prioritizing the nodes that are more likely to produce the optimal path and searching they first. It does this by keeping track of some other heuristic like the straight-line distance from a node to the goal in addition to the cost of the node and sum of these two numbers is the absolute minimum cost of the path. A-star algorithm allows us to search through the nodes in a way that will get us to the goal without necessarily having to add every node into our tree. In fact, once we get to the goal we know that took the optimal path since every other path would have a cost plus distance to go that is greater than the path that we found.
 ```python
-class Dijkstra:
+def verify_node(self, node):
+        px = self.calc_grid_position(node.x, self.min_x)
+        py = self.calc_grid_position(node.y, self.min_y)
+
+        if px < self.min_x:
+            return False
+        elif py < self.min_y:
+            return False
+        elif px >= self.max_x:
+            return False
+        elif py >= self.max_y:
+            return False
+```
+This showing how to decide the node to take for the final path.
+```python
+    @staticmethod
+    def get_motion_model(): # the cost of the surrounding 8 points
+        # dx, dy, cost
+        motion = [[1, 0, 1],
+                  [0, 1, 1],
+                  [-1, 0, 1],
+                  [0, -1, 1],
+                  [-1, -1, math.sqrt(2)],
+                  [-1, 1, math.sqrt(2)],
+                  [1, -1, math.sqrt(2)],
+                  [1, 1, math.sqrt(2)]] 
+```
+This showing the movements of robot.
+
+However, this is a problem with a-star algorithm that it becomes very computationally expensive as the size and dimensions of the state space increases. We can imagine how the number of grid points grow exponentially as the number of dimensions increase which can slow everything down. Therefore, a-star algorithm tends to not be used for high dimensional state spaces, things like determining the path for multi-jointed robot manipulators or, for really large, low dimensional state spaces ones that might have millions or more grid cells.
+
+For the coming up algorithm, d-star algorithm which stands for "Dynamic A* Search".
+
+**DStar Algorithm Path Planning**
+
+* [DStar](https://github.com/AAEfir6/first-project/blob/c4093c464f1013c315357f301f3510d7f3c85ace/Task%204/Comparing_Algorithm/DStar.py)
+```python
+class State:
 ......
 if __name__ == '__main__':
     main()
 ``` 
+It is similar to a-star algorithm but with it's own characteristics, replanning. D-star is also a search-based method but it aims to create a short path in real-time by incrementally reforming paths for the robot’s state as a new information is found. The robot will find a shortest path from its current coordinates to the goal coordinates under its acknowledgement of obstacles. When it observes new map information(unknown obstacles), it adds the information to its own map and, if necessary, replans a new shortest path from its current coordinates to the given goal coordinate. It repeats the process until it reaches the goal coordinates or determines that the goal coordinates cannot be reached. Using technical words to explain, A* and D* share general components of their set up meaning both have OPEN and CLOSE list. The difference between A* and D* is that D* has two additional lists: RAISE and LOWER. D-star algorithm is more efficient than a-star in expansive and complex environments since it avoids high computational costs of backtracking, and it is optimal and complete. 
+However, it's downside might be the amount of time it takes to do the calculations and if a path has to be re-planning that lengthens the amount of time it takes to do one simulation.
+
+For another type of method, sampling-based method is introduced - Probabilistic RoadMap (RPM).
+
 **Probabilistic RoadMap (RPM) Path Planning**
+
 * [Probabilistic RoadMap](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/PRM.py)
 ```python
 class Node:
@@ -467,15 +513,20 @@ class Node:
 if __name__ == '__main__':
     main()
 ```
+To understand how this algorithm works, it is helpful to realize that in most map, there are sections where a path could continue in a straight direction for some distance before it needs to make a turn. With a-star, we have to calculate every single grid cell between the start and goal points, so multiple nodes in the tree. However, if we only checked the far-distant node and there weren't any obstacles in the way then we could calculate the straight line cost for just the node which is before turning. This reduces the total number of nodes and the total number of calculations. So the question becomes how do we pick the location of these sparse nodes so that we still reach the goal. The answer is to sample them. Once the nodes are sampled, nodes are connected to the nearest k neighbors to create a graph structure. The graph structure can then be queried for paths between any two points in the graph. One benefit of PRM is that once a graph is constructed, it can be queried repeatedly for paths without having to construct a new graph. This algorithm is very useful but, it does not give the optimal solution every time. Consider a configuration space with a large number of obstacles situated very close to each other. Assume the gap between two obstacles is very narrow. Recall, that our system generates nodes randomly. Due to this, the probability of generating nodes between those gaps is very small. The system might generate nodes in that region if we increase the number of iterations. You might think that increasing the number of iterations solves the problem, but it is not the case. When the system fails to generate a path for such configurations of the space, we wouldn’t know whether it is because the path does not exist or the number of iterations is less for that environment. This is the only drawback of this algorithm. It does not paint a clear picture for us in event of failure.
+
+### c. Ressults
+
+* [AStar](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/AStar.Algorithm.py)
+<img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/3185ec432a9c228a58aef47bd3dad133c2cf4728/Task%204.3%20AStar.gif">
 
 
+* [DStar](https://github.com/AAEfir6/first-project/blob/c4093c464f1013c315357f301f3510d7f3c85ace/Task%204/Comparing_Algorithm/DStar.py)
+<img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/3185ec432a9c228a58aef47bd3dad133c2cf4728/Task%204.3%20DStar.gif">
 
-### b. Ressults
 
-
-
-### c. Disscussion
-
+* [Probabilistic RoadMap](https://github.com/AAEfir6/first-project/blob/main/Task%204/Comparing_Algorithm/PRM.py)
+<img width="500" height="450" src="https://github.com/Ronaldlo/first-project/blob/3185ec432a9c228a58aef47bd3dad133c2cf4728/Task%204.3%20PRM.gif">
 
 ## Reflective Essay
 
@@ -490,8 +541,4 @@ a. Member 1
 Ahmad, Z., Ullah, F., Tran, C., & Lee, S. (2017). Efficient energy flight path
 planning algorithm using 3-d visibility roadmap for small unmanned aerial
 vehicle. International Journal of Aerospace Engineering, 2017.
-For your self-learning https://www.polyu.edu.hk/aae/internal/studentresources/
-PolyU AAE Endnote tutorial
-https://www.youtube.com/watch?v=DP1bpnYRKxk
-PolyU AAE report formatting tutorial
-https://www.youtube.com/watch?v=p2GaOD_Ca1Y
+Stentz, Anthony (1994), "Optimal and Efficient Path Planning for Partially-Known Environments", Proceedings of the International Conference on Robotics and Automation

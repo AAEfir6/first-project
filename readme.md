@@ -537,7 +537,14 @@ I think it is helpful to use GitHub. By using this, I know how to establish a re
 I extremely appreciate that I can meet such great teammates. They all finished their own tasks punctually. And during we were doing the tasks, we helped each other and shared our thoughts. Through this, it strikes me that partnership is vital to achieve success. We learned how to corporate with others. As I see it, this is more important than the knowledge I have learned during the project.
 
 
-<br>b. Member 2
+<br>b. Member 2 (Leung Yi Him)
+
+<br> Before doing this project, I am unfamiliar with aviation stuff and using the git hub to build the algorithm. And I didn’t expect there to be so many codes we need to develop and calculate so many math equations. But after I finished the project, I think the point I worried about is not a big deal, Since I can learn it from the internet. Apart from the knowledge I learned from the project, it lets me increase my interest in aviation.
+<br><br>
+When I started my project, I felt frightened about the content and the groupmate since there is the hybrid mode teaching this semester. Some of our groupmate was not inside the classroom when the first lesson. Fortunately, I can use social media to contact all the groupmate successfully. In the second project lesson, we can group all the groupmate to be involved in our project. No need to facing the delay of the zoom, not responding from the online call, daydreaming via online meeting. Moreover, some of my groupmates is good at coding and mathematics. And we can distribute the task to everyone according to their ability. For me, I am the teammate who is setting up the flight environment for our group. Initially, I don’t know to build our map by myself. But after my groupmate invested the map with me, we finally set up the environment for the task.
+<br><br>
+To Sum up, the most memorable part I learnt is the markdown language and the collaboration of the report. Because it is another method that I can build a document or HTML, and I can use GitHub to edit and run the code together. Before I learn this skill, I only can use google doc and notepad++ to send files to each other and have a lot of versions of the documents. But after I learn how to use those tools, I think it is a very good invention for a team to work together. Overall, this project let me learn many new things, no matter the aviation and the programming areas.
+<br>
 <br>c. Member 3
 <br>d. Member 4
 <br>e. Member 5

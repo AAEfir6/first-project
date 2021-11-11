@@ -530,8 +530,13 @@ To understand how this algorithm works, it is helpful to realize that in most ma
 
 ## Reflective Essay
 
-a. Member 1
-<br>
+a. Member 1(YAN Zhengyang)
+
+The freshman project is a little difficult but valuable to me. It required us to learn the A-star path planning algorithm. Though we never got into this field, we were still enthusiastic to challenge ourselves.
+I think it is helpful to use GitHub. By using this, I know how to establish a repository and work together with others. And through GitHub, I can get advanced information from all over the world. Then interchange thoughts with many people. During handling these tasks, we distributed several tasks to one or two persons. And I was responsible for the task2-2 and task3. It was not easy for me. Because of the lack of mathematics knowledge, I needed to learn new knowledge to solve them. In this procedure, I have learned how to get new knowledge on my own and to get a proper way to handle difficulties. 
+I extremely appreciate that I can meet such great teammates. They all finished their own tasks punctually. And during we were doing the tasks, we helped each other and shared our thoughts. Through this, it strikes me that partnership is vital to achieve success. We learned how to corporate with others. As I see it, this is more important than the knowledge I have learned during the project.
+
+
 <br>b. Member 2
 <br>c. Member 3
 <br>d. Member 4

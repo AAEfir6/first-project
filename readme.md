@@ -545,7 +545,7 @@ When I started my project, I felt frightened about the content and the groupmate
 <br><br>
 To Sum up, the most memorable part I learnt is the markdown language and the collaboration of the report. Because it is another method that I can build a document or HTML, and I can use GitHub to edit and run the code together. Before I learn this skill, I only can use google doc and notepad++ to send files to each other and have a lot of versions of the documents. But after I learn how to use those tools, I think it is a very good invention for a team to work together. Overall, this project let me learn many new things, no matter the aviation and the programming areas.
 <br>
-<br>c. Member 3
+<br>c. Member 3(Yulong Wang Walton)
 <br>d. Member 4
 <br>e. Member 5
 

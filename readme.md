@@ -601,7 +601,16 @@ To Sum up, the most memorable part I learnt is the markdown language and the col
   To conclusion,the freshman project made me learn a lot.Thanks to Prof. Hsu’s teaching method because I not only learnt how to code a program but also learnt how to learn in a new way.In the end,thanks for my devoted teammate.
 
 
-<br>d. Member 4
+<br>d. Member 4 (Chan Shun Ming)
+      I think that it is too much difficult for me. Hence I only do the background of path planning to aviation engineering, theory of path planning algorithm and introduction of the engineering tools. First, I searched some primary data and information from our course notes. Then I google it and find more resources on it.
+
+      I think that the Friday freshman project is very challenging for me. I am not very familiar with computers, especially coding and mathematics, as they require logic. That needs me to spend much more time understanding the meaning of different code functions. 
+
+      Writing code is a cumbersome task, especially when many people complete a large project. It is very complicated. When a group of people write a project together, the time to complete and the completion progress are different. You write a little, I write a little, maybe even what you wrote today has an error, which affects the code I wrote yesterday. How can we quickly summarize everyone's code in the end, and how can we find errors after translating? Everyone's code, etc. Wait for a series of questions.
+
+      One of the most significant benefits is that the Friday freshman seminar motivates me to learn more about coding and path planning. At least I know what is GitHub, python and some essential changes are. Then, I can do some basic coding, not only typing hello world but also doing some simple calculations. On the other hand, it also makes me know more about myself. Coding is not my strength. This mission should pass to my groupmates. I cannot be a free rider, so I gather more resources to do the task of the background of path planning, theory of path planning algorithm and introduction of the engineering tools. For example, I would collect and find more data to do that task. I encourage them to pay more attention to coding. Finally, I managed their video, then I cut and combined the presentation video. I believe that I had made my most significant value.
+![image](https://user-images.githubusercontent.com/90884660/141484435-c07c2502-4145-4bfa-bb57-f26369814cc2.png)
+
 <br>e. Member 5
 
 ## References

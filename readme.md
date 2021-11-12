@@ -52,12 +52,56 @@
 
 
 ## Background of Path Planning to Aviation Engineering
-<weq we qwesdfghruelgerthleriluhgrehignzi;ghe>
+        Path planning is an essential aspect of the mission planning system and a vital technology of aircraft autonomous control for the best aircraft design. An aviation network model based on navigation point flight is meant to locate the best route quickly. The cost function is calculated by considering the distance between aircraft density, the weather, the nodes, and other parameters and then using an updated evolutionary algorithm to determine the best path in the model. It is also used in robotics and computer games. The simulation results suggest that the technique can achieve the best aircraft flight route design in an aviation network.![image](https://user-images.githubusercontent.com/90884660/141467026-e3434361-9e62-4fc4-9620-31090a42d372.png)
+
+        One of the primary difficulties facing the worldwide air traffic management system is air traffic congestion. The inadequacy of radar-based air traffic controllers to handle today's increased demand for air travel is partly blamed for the gridlock. Free flying, which allows each aircraft to optimize its path, has lately been offered as a solution to the problem of air traffic congestion. The avionics community is now attempting to make this notion a reality. To implement the idea of free-flying, conflict detection and resolution amongst aircraft is a difficult challenge.![image](https://user-images.githubusercontent.com/90884660/141467145-6928b30d-91da-4493-9df4-2cb74249b013.png)
+    
+        For example, Private pilots do the path plan before the flight to ensure the navigation aid is available. They must know more about weather forecasts like wind direction. For ATC near airports, collaborative path planning is required to make the best use of the crowded airspace. Hence, they can calculate the aircraft fuel and find the shortest flying route. They are getting more advantages such as short the flying time, more safety, finding alternate airports for an emergency landing. Also, it can reduce the use of fuel and reduce the flying cost. However, the flying route of all aircraft is assigned by Air Traffic Controller. They are ensuring that all aircraft keep their distance and be more safety. ![image](https://user-images.githubusercontent.com/90884660/141467191-6fe20b3a-eea5-47e3-8a85-7a80a84f7282.png)
+
 
 ## Theory of Path Planning Algorithm
+ 
+         Node, meaning that all potential position you can go across with a unique position (x,y),Search Space, meaning that a collection of nodes, like all board positions of a board game. Using a star method, f(x,y)= g(x,y) + h(x,y). Also, wall and obstacles cannot be touched. We set up start and goal node, obstacle, neighboring, cost and final  path calculations.![image](https://user-images.githubusercontent.com/90884660/141467234-762129c0-d1d5-4758-9cd7-953bdea89545.png)
+  
+         The fundamental rationale of the cost index concept is to achieve minimum trip cost by means of a trade-off between operation costs per hour and incremental fuel burn.
+                 C = (CF).( ∆F)+(CT).( ∆T)+(CC)
+(CF)=cost of fuel per kg
+(CT)=time related cost per minute of flight
+(CC)=fixed cost independent of time
+(CT)=time related cost per minute of flight
+(∆F)=delta F=Trip fuel
+(∆T)=trip time
+![image](https://user-images.githubusercontent.com/90884660/141467269-f770067e-d1f6-42f1-b8be-7f26283d2965.png)
 
+            Fuel-consuming area: the volume of fuel consumption is twice larger than other area duet to unstable airflow. (additional cost ∆Fa). Time-consuming area: the flying speed is limited due to the air traffic control. (additional cost ∆𝑇𝑎)
+
+    Cost can be calculated using the following formula: 𝑓(𝑥, 𝑦) = 𝑔(𝑥, 𝑦) + ℎ(𝑥, 𝑦)
+
+    One white grid with cost as follows for 𝑔(𝑥, 𝑦) & ℎ(𝑥, 𝑦):
+ C = (𝐶𝐹).[(∆𝐹)+ (∆𝐹A(x,y))]+ (𝐶𝑇). (∆𝑇 +∆Ta(x.y))+CC
+![image](https://user-images.githubusercontent.com/90884660/141467304-d8b5cdfb-35e0-408b-9b39-4c0cc714e343.png)
+
+
+         
 
 ## Introduction of the Engineering Tools
+       GitHub![image](https://user-images.githubusercontent.com/90884660/141467342-a303e4b0-30d4-44cb-a9c0-e5493cb932d2.png)
+      
+       GitHub is a "source code hosting service platform" for "version control through Git". In short, it is a gathering place for various open-source software (projects). Suppose the project author makes the project public. In that case, anyone can access, use, Even make changes to the project's content, and the project author can use Git (the version control tool that will be introduced later) to control these changes and then achieve a "co-creation" concept.
+
+       GitHub was officially launched on April 10, 2008. In addition to Git management code storage and an online primary web interface, it also provides subscriptions, discussion groups, rendering, editors, collective graphs (reports), code snippet sharing (points), etc. Function. At present, there are more than 3.5 million registered users, and the number of upcoming releases is also significant, including many unknown and very open-source projects, Ruby on Rails, jQuery, Python, etc.
+
+        In the class discussion, we create a github repository. It is like a group where we can upload our coding work and look for some resources. Then, we needed to use Visual Studio Code and Python for coding; then, we cloned our GitHub. Whenever we finish our work, we can pull requests and upload them to our GitHub. Then, our teacher, groupmate and group leader can see our work.
+![image](https://user-images.githubusercontent.com/90884660/141467379-4a3afec8-f069-4de3-9237-f1e94e01d0eb.png)
+
+        Python![image](https://user-images.githubusercontent.com/90884660/141467417-d4162e74-a4fe-4b6b-b0da-34ed4dd1261b.png)
+
+        Python, a widely used high-level programming language, is a general-purpose programming language. As a literal translation language, Python's design philosophy emphasizes code readability and concise syntax (especially the use of space indentation to divide code blocks instead of braces or keywords). Python allows developers to express ideas with less code compared to C++ or Java. Whether it is a small or large program, the language tries to make the program's structure clear.
+
+         Python is usually used for data analysis because Python is convenient and flexible. It also can be used flexibly according to the data analysis and statistics. Python is also a relatively complete data analysis ecosystem. Among them, matplotlib is often used to draw data charts. It is a 2D drawing tool with good cross-platform interaction characteristics.
+
+        Also, Python is an object-oriented dynamic language and is suitable for scientific computing. Not only that, but Python provides many APIs, which is precise because Python contains more modules ideal for artificial intelligence. Hence, cack end engineer, operations engineer, data analyst, game developer and website developer have also required Python knowledge.
+![image](https://user-images.githubusercontent.com/90884660/141467445-e88e2402-6af5-48e5-84d8-dc93e6658fe0.png)
 
 
 ## Acknowledgements

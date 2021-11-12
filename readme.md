@@ -545,7 +545,14 @@ When I started my project, I felt frightened about the content and the groupmate
 <br><br>
 To Sum up, the most memorable part I learnt is the markdown language and the collaboration of the report. Because it is another method that I can build a document or HTML, and I can use GitHub to edit and run the code together. Before I learn this skill, I only can use google doc and notepad++ to send files to each other and have a lot of versions of the documents. But after I learn how to use those tools, I think it is a very good invention for a team to work together. Overall, this project let me learn many new things, no matter the aviation and the programming areas.
 <br>
+
 <br>c. Member 3(Yulong Wang Walton)
+  When I choose the AAE project I wish to learn something about coding because I have not coded any program before.With the happy mind I walked in the classroom W502g.
+  But things went not very smooth because Prof. Hsu told us that we need to do everything by ourselves and he would guide us if we have any question.As a quiet student I really don’t want to talk with any stranger.So I just learnt to do everything by myself.The process was pretty tough and sometimes I even wanted to give up especially at the beginning of the task—I did not know how to attend our group’s Github project.That made me extremely sad.However,thanks to the help of Nikkie I finally joined the group project and got down to learning coding.I searched on the Internet to find anything I want and then applied the knowledge to the project.Then came to the real challenge—task 2-1.
+  For task 2-1 I have lot to say.Generally speaking,it is the most challenging task when I entered PolyU.I do not know how to design a programming to calculate the minimum cost—but I held the firm belief that there must be other methods to solve the problem.I searched on the Internet again but found nothing relevant.So I searched help from other classmates.And they told me that I could use the knowledge learnt from high school.So I walked back to home and thought about it again and again.Fortunately,I found the ket—Linear Programming.I was excited when I was doing this “math” problem.And afterwards,everything seemed better.
+  To conclusion,the freshman project made me learn a lot.Thanks to Prof. Hsu’s teaching method because I not only learnt how to code a program but also learnt how to learn in a new way.In the end,thanks for my devoted teammate.
+
+
 <br>d. Member 4
 <br>e. Member 5
 
